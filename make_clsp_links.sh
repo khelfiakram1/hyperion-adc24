@@ -6,14 +6,14 @@
 # This avoids that every person need its own copy
 
 #kaldi
-cd tools
-if [ ! -f kaldi ]; then
-    ln -s /export/b15/janto/kaldi/kaldi-villalba kaldi
-fi
+#cd tools
+#if [ ! -f kaldi ]; then
+#    ln -s /export/b15/janto/kaldi/kaldi-villalba kaldi
+#fi
 
 # anaconda 3
 if [ ! -f anaconda3 ];then
-    ln -s /home/janto/usr/local/anaconda3 anaconda3
+    ln -s /home/mkhelfi1/anaconda3 anaconda3
 fi
 cd -
 

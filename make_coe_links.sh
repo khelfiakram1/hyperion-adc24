@@ -12,7 +12,7 @@ if [ ! -f kaldi ]; then
 fi
 # anaconda 3
 if [ ! -f anaconda3 ];then
-    ln -s /exp/jvillalba/anaconda/anaconda3 anaconda3
+    ln -s /home/mkhelfi1/anaconda3 anaconda3
 fi
 cd -
 

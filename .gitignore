@@ -3,6 +3,11 @@
 *.pdf
 *.DS_Store
 *.cache
+*.wav
+*.flac
+egs/adc24/RIRS_NOISES
+egs/adc24/data
+exp/*
 *__pycache__
 tests/data_out/*
 #examples/data/output/wav/*
@@ -43,6 +48,7 @@ rirs_noises.zip
 RIRS_NOISES
 egs/*/*/exp
 egs/*/*/data
+exp
 
 
 # some dummy file names

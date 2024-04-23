@@ -10,6 +10,7 @@ fi
 set -e
 num_gpus=0
 if [ -n "$HYP_ENV" ];then
+    #echo $HYP_ENV
     conda_env=$HYP_ENV
 else
     conda_env=base
@@ -41,8 +42,8 @@ if [ $# -lt 1 ];then
     echo "queue.pl --gpu 1 -V log_file conda_env.sh --num-gpus 1 --conda-env $HYP_ENV train-dnn.py --lr 0.1"
     exit 0
 fi
-# echo "PATH=$PATH"
-# echo "LD_LIBRARY_PATH=$LD_LIBRARY_PATH"
+#echo "PATH=$PATH"
+#echo "LD_LIBRARY_PATH=$LD_LIBRARY_PATH"
 # export LRU_CACHE_CAPACITY=1
 # echo "LRU_CACHE_CAPACITY=$LRU_CACHE_CAPACITY"
 
@@ -78,5 +79,5 @@ shift
 
 $command $py_exec "$@"
 
-conda deactivate 
+#conda deactivate 
 
