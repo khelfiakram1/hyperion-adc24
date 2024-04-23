@@ -1,0 +1,201 @@
+# Running on c05
+# Started at Thu Apr 18 20:13:31 EDT 2024
+# hyp_utils/conda_env.sh preprocess-audio-files.py --output-audio-format flac --remove-dc-offset --write-time-durs /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio/utt2dur.musan_music.9 --part-idx 9 --num-parts 10 --input data/musan_music/wav.scp --output-path /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio --output-script /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio/wav.musan_music.9.scp 
+Python 3.6.13 :: Anaconda, Inc.
+2024-04-18 20:13:34,639 (preprocess-audio-files:57) INFO: input_args={'part_idx': 9, 'num_parts': 10, 'wav_scale': 32767}
+2024-04-18 20:13:34,639 (preprocess-audio-files:58) INFO: output_args={'audio_format': 'flac', 'audio_subtype': None}
+2024-04-18 20:13:35,351 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0018
+2024-04-18 20:13:35,351 (preprocess-audio-files:94) INFO: utt m detected 188.604062/188.604062 secs (100.00 %) speech 
+2024-04-18 20:13:35,520 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0018 length=188.604 secs elapsed-time=877.36 ms. read-time=708.74 ms. write-time=168.62 ms. real-time-factor=214.97x-range=[-32766.215307-31867.812159]
+2024-04-18 20:13:36,467 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0019
+2024-04-18 20:13:36,468 (preprocess-audio-files:94) INFO: utt m detected 231.235938/231.235938 secs (100.00 %) speech 
+2024-04-18 20:13:36,648 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0019 length=231.236 secs elapsed-time=1128.19 ms. read-time=947.54 ms. write-time=180.65 ms. real-time-factor=204.96x-range=[-32752.134616-27097.038876]
+2024-04-18 20:13:37,407 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0020
+2024-04-18 20:13:37,408 (preprocess-audio-files:94) INFO: utt m detected 145.658750/145.658750 secs (100.00 %) speech 
+2024-04-18 20:13:37,589 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0020 length=145.659 secs elapsed-time=940.67 ms. read-time=758.87 ms. write-time=181.80 ms. real-time-factor=154.85x-range=[-32793.489976-32711.510909]
+2024-04-18 20:13:38,221 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0021
+2024-04-18 20:13:38,222 (preprocess-audio-files:94) INFO: utt m detected 288.284000/288.284000 secs (100.00 %) speech 
+2024-04-18 20:13:38,435 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0021 length=288.284 secs elapsed-time=845.64 ms. read-time=631.94 ms. write-time=213.70 ms. real-time-factor=340.90x-range=[-32766.979958-32340.033073]
+2024-04-18 20:13:39,024 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0022
+2024-04-18 20:13:39,024 (preprocess-audio-files:94) INFO: utt m detected 76.591000/76.591000 secs (100.00 %) speech 
+2024-04-18 20:13:39,094 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0022 length=76.591 secs elapsed-time=657.98 ms. read-time=588.28 ms. write-time=69.70 ms. real-time-factor=116.40x-range=[-30299.088319-32765.987028]
+2024-04-18 20:13:39,271 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0023
+2024-04-18 20:13:39,272 (preprocess-audio-files:94) INFO: utt m detected 136.594313/136.594313 secs (100.00 %) speech 
+2024-04-18 20:13:39,391 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0023 length=136.594 secs elapsed-time=297.02 ms. read-time=177.81 ms. write-time=119.21 ms. real-time-factor=459.88x-range=[-29178.162399-32764.947190]
+2024-04-18 20:13:40,139 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0024
+2024-04-18 20:13:40,139 (preprocess-audio-files:94) INFO: utt m detected 218.357563/218.357563 secs (100.00 %) speech 
+2024-04-18 20:13:40,316 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0024 length=218.358 secs elapsed-time=924.36 ms. read-time=747.60 ms. write-time=176.76 ms. real-time-factor=236.22x-range=[-32765.959550-23736.316084]
+2024-04-18 20:13:40,455 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0025
+2024-04-18 20:13:40,455 (preprocess-audio-files:94) INFO: utt m detected 53.916750/53.916750 secs (100.00 %) speech 
+2024-04-18 20:13:40,511 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0025 length=53.917 secs elapsed-time=195.69 ms. read-time=139.72 ms. write-time=55.97 ms. real-time-factor=275.53x-range=[-32766.010310-32191.007299]
+2024-04-18 20:13:40,992 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0026
+2024-04-18 20:13:40,993 (preprocess-audio-files:94) INFO: utt m detected 194.168187/194.168187 secs (100.00 %) speech 
+2024-04-18 20:13:41,166 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0026 length=194.168 secs elapsed-time=654.68 ms. read-time=480.97 ms. write-time=173.71 ms. real-time-factor=296.58x-range=[-26548.576643-32741.613908]
+2024-04-18 20:13:41,773 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0027
+2024-04-18 20:13:41,774 (preprocess-audio-files:94) INFO: utt m detected 222.328188/222.328188 secs (100.00 %) speech 
+2024-04-18 20:13:41,976 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0027 length=222.328 secs elapsed-time=809.14 ms. read-time=606.90 ms. write-time=202.24 ms. real-time-factor=274.77x-range=[-33130.392160-31586.632773]
+2024-04-18 20:13:42,979 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0028
+2024-04-18 20:13:42,980 (preprocess-audio-files:94) INFO: utt m detected 214.804875/214.804875 secs (100.00 %) speech 
+2024-04-18 20:13:43,151 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0028 length=214.805 secs elapsed-time=1174.82 ms. read-time=1003.72 ms. write-time=171.10 ms. real-time-factor=182.84x-range=[-30574.727879-32535.346095]
+2024-04-18 20:13:43,991 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0029
+2024-04-18 20:13:43,992 (preprocess-audio-files:94) INFO: utt m detected 220.395125/220.395125 secs (100.00 %) speech 
+2024-04-18 20:13:44,232 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0029 length=220.395 secs elapsed-time=1080.98 ms. read-time=840.24 ms. write-time=240.74 ms. real-time-factor=203.88x-range=[-29899.174020-32765.913535]
+2024-04-18 20:13:44,708 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0030
+2024-04-18 20:13:44,708 (preprocess-audio-files:94) INFO: utt m detected 200.071812/200.071812 secs (100.00 %) speech 
+2024-04-18 20:13:44,888 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0030 length=200.072 secs elapsed-time=654.86 ms. read-time=475.90 ms. write-time=178.96 ms. real-time-factor=305.52x-range=[-29629.046373-32766.049422]
+2024-04-18 20:13:45,254 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0031
+2024-04-18 20:13:45,254 (preprocess-audio-files:94) INFO: utt m detected 146.808188/146.808188 secs (100.00 %) speech 
+2024-04-18 20:13:45,392 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0031 length=146.808 secs elapsed-time=504.43 ms. read-time=366.40 ms. write-time=138.03 ms. real-time-factor=291.04x-range=[-32766.007861-32298.006483]
+2024-04-18 20:13:46,635 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0032
+2024-04-18 20:13:46,635 (preprocess-audio-files:94) INFO: utt m detected 221.283250/221.283250 secs (100.00 %) speech 
+2024-04-18 20:13:46,830 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0032 length=221.283 secs elapsed-time=1437.29 ms. read-time=1242.44 ms. write-time=194.85 ms. real-time-factor=153.96x-range=[-32766.002892-30164.076576]
+2024-04-18 20:13:47,164 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0033
+2024-04-18 20:13:47,164 (preprocess-audio-files:94) INFO: utt m detected 142.706938/142.706938 secs (100.00 %) speech 
+2024-04-18 20:13:47,298 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0033 length=142.707 secs elapsed-time=467.77 ms. read-time=334.04 ms. write-time=133.73 ms. real-time-factor=305.08x-range=[-32762.233783-28878.885022]
+2024-04-18 20:13:47,780 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0034
+2024-04-18 20:13:47,780 (preprocess-audio-files:94) INFO: utt m detected 177.432000/177.432000 secs (100.00 %) speech 
+2024-04-18 20:13:47,902 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0034 length=177.432 secs elapsed-time=604.13 ms. read-time=481.86 ms. write-time=122.27 ms. real-time-factor=293.70x-range=[-27153.171320-32766.000036]
+2024-04-18 20:13:48,156 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0035
+2024-04-18 20:13:48,157 (preprocess-audio-files:94) INFO: utt m detected 120.032625/120.032625 secs (100.00 %) speech 
+2024-04-18 20:13:48,252 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0035 length=120.033 secs elapsed-time=349.05 ms. read-time=254.25 ms. write-time=94.80 ms. real-time-factor=343.88x-range=[-32766.001014-29248.106408]
+2024-04-18 20:13:49,278 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0036
+2024-04-18 20:13:49,278 (preprocess-audio-files:94) INFO: utt m detected 244.152000/244.152000 secs (100.00 %) speech 
+2024-04-18 20:13:49,491 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0036 length=244.152 secs elapsed-time=1239.02 ms. read-time=1026.31 ms. write-time=212.72 ms. real-time-factor=197.05x-range=[-32764.937605-26319.259233]
+2024-04-18 20:13:49,914 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0037
+2024-04-18 20:13:49,914 (preprocess-audio-files:94) INFO: utt m detected 234.893063/234.893063 secs (100.00 %) speech 
+2024-04-18 20:13:50,077 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0037 length=234.893 secs elapsed-time=585.71 ms. read-time=423.03 ms. write-time=162.68 ms. real-time-factor=401.04x-range=[-32766.038792-29053.074580]
+2024-04-18 20:13:51,380 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0038
+2024-04-18 20:13:51,380 (preprocess-audio-files:94) INFO: utt m detected 365.662062/365.662062 secs (100.00 %) speech 
+2024-04-18 20:13:51,674 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0038 length=365.662 secs elapsed-time=1597.24 ms. read-time=1303.36 ms. write-time=293.87 ms. real-time-factor=228.93x-range=[-32766.122979-32523.884468]
+2024-04-18 20:13:52,179 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0039
+2024-04-18 20:13:52,179 (preprocess-audio-files:94) INFO: utt m detected 170.945312/170.945312 secs (100.00 %) speech 
+2024-04-18 20:13:52,341 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0039 length=170.945 secs elapsed-time=666.15 ms. read-time=504.38 ms. write-time=161.77 ms. real-time-factor=256.62x-range=[-30863.247825-32765.810311]
+2024-04-18 20:13:53,184 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0040
+2024-04-18 20:13:53,184 (preprocess-audio-files:94) INFO: utt m detected 166.034312/166.034312 secs (100.00 %) speech 
+2024-04-18 20:13:53,309 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0040 length=166.034 secs elapsed-time=967.70 ms. read-time=843.21 ms. write-time=124.49 ms. real-time-factor=171.58x-range=[-32671.833234-32754.170062]
+2024-04-18 20:13:54,035 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0041
+2024-04-18 20:13:54,036 (preprocess-audio-files:94) INFO: utt m detected 187.193500/187.193500 secs (100.00 %) speech 
+2024-04-18 20:13:54,169 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0041 length=187.194 secs elapsed-time=860.22 ms. read-time=726.59 ms. write-time=133.64 ms. real-time-factor=217.61x-range=[-30210.045038-32766.033026]
+2024-04-18 20:13:54,914 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0042
+2024-04-18 20:13:54,914 (preprocess-audio-files:94) INFO: utt m detected 245.524875/245.524875 secs (100.00 %) speech 
+2024-04-18 20:13:55,131 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0042 length=245.525 secs elapsed-time=961.64 ms. read-time=744.24 ms. write-time=217.40 ms. real-time-factor=255.32x-range=[-32766.074439-31344.968987]
+2024-04-18 20:13:55,456 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0043
+2024-04-18 20:13:55,456 (preprocess-audio-files:94) INFO: utt m detected 145.449813/145.449813 secs (100.00 %) speech 
+2024-04-18 20:13:55,587 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0043 length=145.450 secs elapsed-time=455.29 ms. read-time=324.56 ms. write-time=130.73 ms. real-time-factor=319.47x-range=[-32763.704677-31066.347325]
+2024-04-18 20:13:56,395 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0044
+2024-04-18 20:13:56,395 (preprocess-audio-files:94) INFO: utt m detected 210.050625/210.050625 secs (100.00 %) speech 
+2024-04-18 20:13:56,580 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0044 length=210.051 secs elapsed-time=993.09 ms. read-time=808.03 ms. write-time=185.06 ms. real-time-factor=211.51x-range=[-32765.930349-31480.108958]
+2024-04-18 20:13:57,017 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0045
+2024-04-18 20:13:57,017 (preprocess-audio-files:94) INFO: utt m detected 181.812250/181.812250 secs (100.00 %) speech 
+2024-04-18 20:13:57,155 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0045 length=181.812 secs elapsed-time=574.59 ms. read-time=436.74 ms. write-time=137.85 ms. real-time-factor=316.42x-range=[-32801.670578-30391.400864]
+2024-04-18 20:13:57,804 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0046
+2024-04-18 20:13:57,804 (preprocess-audio-files:94) INFO: utt m detected 225.384500/225.384500 secs (100.00 %) speech 
+2024-04-18 20:13:57,956 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0046 length=225.385 secs elapsed-time=800.80 ms. read-time=649.08 ms. write-time=151.72 ms. real-time-factor=281.45x-range=[-32766.011978-25576.207505]
+2024-04-18 20:13:58,789 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0047
+2024-04-18 20:13:58,789 (preprocess-audio-files:94) INFO: utt m detected 277.760000/277.760000 secs (100.00 %) speech 
+2024-04-18 20:13:59,082 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0047 length=277.760 secs elapsed-time=1125.68 ms. read-time=832.51 ms. write-time=293.17 ms. real-time-factor=246.75x-range=[-29603.055870-32766.040718]
+2024-04-18 20:13:59,416 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0048
+2024-04-18 20:13:59,416 (preprocess-audio-files:94) INFO: utt m detected 139.440000/139.440000 secs (100.00 %) speech 
+2024-04-18 20:13:59,542 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0048 length=139.440 secs elapsed-time=459.48 ms. read-time=333.83 ms. write-time=125.65 ms. real-time-factor=303.47x-range=[-32766.014782-29021.099567]
+2024-04-18 20:14:00,523 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0049
+2024-04-18 20:14:00,523 (preprocess-audio-files:94) INFO: utt m detected 268.277562/268.277562 secs (100.00 %) speech 
+2024-04-18 20:14:00,737 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0049 length=268.278 secs elapsed-time=1194.27 ms. read-time=981.00 ms. write-time=213.27 ms. real-time-factor=224.64x-range=[-32781.035444-26477.156084]
+2024-04-18 20:14:01,145 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0050
+2024-04-18 20:14:01,145 (preprocess-audio-files:94) INFO: utt m detected 212.897938/212.897938 secs (100.00 %) speech 
+2024-04-18 20:14:01,312 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0050 length=212.898 secs elapsed-time=575.13 ms. read-time=408.36 ms. write-time=166.77 ms. real-time-factor=370.17x-range=[-32495.375931-32545.639114]
+2024-04-18 20:14:02,160 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0051
+2024-04-18 20:14:02,160 (preprocess-audio-files:94) INFO: utt m detected 205.740438/205.740438 secs (100.00 %) speech 
+2024-04-18 20:14:02,323 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0051 length=205.740 secs elapsed-time=1011.02 ms. read-time=847.68 ms. write-time=163.34 ms. real-time-factor=203.50x-range=[-32844.546223-31726.483166]
+2024-04-18 20:14:02,633 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0052
+2024-04-18 20:14:02,633 (preprocess-audio-files:94) INFO: utt m detected 142.440000/142.440000 secs (100.00 %) speech 
+2024-04-18 20:14:02,768 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0052 length=142.440 secs elapsed-time=444.36 ms. read-time=309.40 ms. write-time=134.95 ms. real-time-factor=320.55x-range=[-32791.453747-32634.549549]
+2024-04-18 20:14:03,319 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0053
+2024-04-18 20:14:03,319 (preprocess-audio-files:94) INFO: utt m detected 301.975500/301.975500 secs (100.00 %) speech 
+2024-04-18 20:14:03,574 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0053 length=301.976 secs elapsed-time=805.71 ms. read-time=550.59 ms. write-time=255.11 ms. real-time-factor=374.80x-range=[-31935.543241-32732.483187]
+2024-04-18 20:14:04,218 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0054
+2024-04-18 20:14:04,219 (preprocess-audio-files:94) INFO: utt m detected 250.697125/250.697125 secs (100.00 %) speech 
+2024-04-18 20:14:04,424 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0054 length=250.697 secs elapsed-time=849.28 ms. read-time=644.60 ms. write-time=204.68 ms. real-time-factor=295.19x-range=[-32766.056194-29155.054066]
+2024-04-18 20:14:04,748 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0055
+2024-04-18 20:14:04,748 (preprocess-audio-files:94) INFO: utt m detected 175.934687/175.934687 secs (100.00 %) speech 
+2024-04-18 20:14:04,882 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0055 length=175.935 secs elapsed-time=458.40 ms. read-time=324.60 ms. write-time=133.80 ms. real-time-factor=383.80x-range=[-32766.004898-28298.131516]
+2024-04-18 20:14:05,058 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0056
+2024-04-18 20:14:05,058 (preprocess-audio-files:94) INFO: utt m detected 50.040000/50.040000 secs (100.00 %) speech 
+2024-04-18 20:14:05,106 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0056 length=50.040 secs elapsed-time=223.63 ms. read-time=175.77 ms. write-time=47.86 ms. real-time-factor=223.76x-range=[-32765.996774-30929.059347]
+2024-04-18 20:14:05,630 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0057
+2024-04-18 20:14:05,631 (preprocess-audio-files:94) INFO: utt m detected 190.040812/190.040812 secs (100.00 %) speech 
+2024-04-18 20:14:05,783 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0057 length=190.041 secs elapsed-time=676.95 ms. read-time=524.29 ms. write-time=152.65 ms. real-time-factor=280.73x-range=[-27400.135218-32766.028601]
+2024-04-18 20:14:06,769 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0058
+2024-04-18 20:14:06,770 (preprocess-audio-files:94) INFO: utt m detected 120.529000/120.529000 secs (100.00 %) speech 
+2024-04-18 20:14:06,877 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0058 length=120.529 secs elapsed-time=1093.81 ms. read-time=986.30 ms. write-time=107.51 ms. real-time-factor=110.19x-range=[-31643.666884-32819.365800]
+2024-04-18 20:14:08,099 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0059
+2024-04-18 20:14:08,099 (preprocess-audio-files:94) INFO: utt m detected 283.454687/283.454687 secs (100.00 %) speech 
+2024-04-18 20:14:08,332 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0059 length=283.455 secs elapsed-time=1454.96 ms. read-time=1221.81 ms. write-time=233.15 ms. real-time-factor=194.82x-range=[-32765.930866-32591.074535]
+2024-04-18 20:14:08,633 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0060
+2024-04-18 20:14:08,633 (preprocess-audio-files:94) INFO: utt m detected 142.320000/142.320000 secs (100.00 %) speech 
+2024-04-18 20:14:08,752 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0060 length=142.320 secs elapsed-time=418.91 ms. read-time=300.62 ms. write-time=118.29 ms. real-time-factor=339.74x-range=[-33224.694173-31299.336650]
+2024-04-18 20:14:09,111 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0061
+2024-04-18 20:14:09,111 (preprocess-audio-files:94) INFO: utt m detected 188.029375/188.029375 secs (100.00 %) speech 
+2024-04-18 20:14:09,269 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0061 length=188.029 secs elapsed-time=517.47 ms. read-time=359.45 ms. write-time=158.02 ms. real-time-factor=363.36x-range=[-32761.871612-30262.204987]
+2024-04-18 20:14:09,598 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0062
+2024-04-18 20:14:09,598 (preprocess-audio-files:94) INFO: utt m detected 166.948563/166.948563 secs (100.00 %) speech 
+2024-04-18 20:14:09,719 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0062 length=166.949 secs elapsed-time=449.73 ms. read-time=328.42 ms. write-time=121.31 ms. real-time-factor=371.22x-range=[-32765.003076-27512.157355]
+2024-04-18 20:14:09,931 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0063
+2024-04-18 20:14:09,931 (preprocess-audio-files:94) INFO: utt m detected 55.040000/55.040000 secs (100.00 %) speech 
+2024-04-18 20:14:09,990 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0063 length=55.040 secs elapsed-time=270.85 ms. read-time=211.40 ms. write-time=59.45 ms. real-time-factor=203.21x-range=[-32768.873221-29282.233071]
+2024-04-18 20:14:10,409 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0064
+2024-04-18 20:14:10,410 (preprocess-audio-files:94) INFO: utt m detected 193.800000/193.800000 secs (100.00 %) speech 
+2024-04-18 20:14:10,590 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0064 length=193.800 secs elapsed-time=599.35 ms. read-time=418.88 ms. write-time=180.47 ms. real-time-factor=323.35x-range=[-32860.012460-31593.020529]
+2024-04-18 20:14:11,257 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0065
+2024-04-18 20:14:11,258 (preprocess-audio-files:94) INFO: utt m detected 118.386938/118.386938 secs (100.00 %) speech 
+2024-04-18 20:14:11,377 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0065 length=118.387 secs elapsed-time=787.06 ms. read-time=667.37 ms. write-time=119.69 ms. real-time-factor=150.42x-range=[-32368.020409-32766.991768]
+2024-04-18 20:14:11,522 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0066
+2024-04-18 20:14:11,522 (preprocess-audio-files:94) INFO: utt m detected 62.641625/62.641625 secs (100.00 %) speech 
+2024-04-18 20:14:11,598 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0066 length=62.642 secs elapsed-time=220.38 ms. read-time=144.26 ms. write-time=76.12 ms. real-time-factor=284.24x-range=[-32766.331669-32008.691494]
+2024-04-18 20:14:12,224 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0067
+2024-04-18 20:14:12,224 (preprocess-audio-files:94) INFO: utt m detected 204.042438/204.042438 secs (100.00 %) speech 
+2024-04-18 20:14:12,385 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0067 length=204.042 secs elapsed-time=786.90 ms. read-time=625.77 ms. write-time=161.14 ms. real-time-factor=259.30x-range=[-32504.102417-32770.905487]
+2024-04-18 20:14:13,879 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0068
+2024-04-18 20:14:13,879 (preprocess-audio-files:94) INFO: utt m detected 241.893875/241.893875 secs (100.00 %) speech 
+2024-04-18 20:14:14,063 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0068 length=241.894 secs elapsed-time=1677.55 ms. read-time=1493.53 ms. write-time=184.02 ms. real-time-factor=144.19x-range=[-29406.083246-32766.019354]
+2024-04-18 20:14:14,604 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0069
+2024-04-18 20:14:14,604 (preprocess-audio-files:94) INFO: utt m detected 200.751000/200.751000 secs (100.00 %) speech 
+2024-04-18 20:14:14,766 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0069 length=200.751 secs elapsed-time=703.11 ms. read-time=541.21 ms. write-time=161.90 ms. real-time-factor=285.52x-range=[-32766.084375-27196.085669]
+2024-04-18 20:14:15,142 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0070
+2024-04-18 20:14:15,142 (preprocess-audio-files:94) INFO: utt m detected 186.148562/186.148562 secs (100.00 %) speech 
+2024-04-18 20:14:15,311 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0070 length=186.149 secs elapsed-time=543.89 ms. read-time=375.61 ms. write-time=168.28 ms. real-time-factor=342.26x-range=[-32765.977831-27461.184126]
+2024-04-18 20:14:15,866 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0071
+2024-04-18 20:14:15,867 (preprocess-audio-files:94) INFO: utt m detected 200.698750/200.698750 secs (100.00 %) speech 
+2024-04-18 20:14:16,079 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0071 length=200.699 secs elapsed-time=767.64 ms. read-time=555.94 ms. write-time=211.70 ms. real-time-factor=261.45x-range=[-31461.351320-32756.688841]
+2024-04-18 20:14:16,526 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0072
+2024-04-18 20:14:16,526 (preprocess-audio-files:94) INFO: utt m detected 218.984500/218.984500 secs (100.00 %) speech 
+2024-04-18 20:14:16,723 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0072 length=218.984 secs elapsed-time=644.47 ms. read-time=447.55 ms. write-time=196.92 ms. real-time-factor=339.79x-range=[-32765.934757-32363.077603]
+2024-04-18 20:14:17,417 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0073
+2024-04-18 20:14:17,418 (preprocess-audio-files:94) INFO: utt m detected 379.820438/379.820438 secs (100.00 %) speech 
+2024-04-18 20:14:17,650 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0073 length=379.820 secs elapsed-time=926.06 ms. read-time=694.10 ms. write-time=231.96 ms. real-time-factor=410.15x-range=[-31289.041652-32766.003483]
+2024-04-18 20:14:19,219 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0074
+2024-04-18 20:14:19,220 (preprocess-audio-files:94) INFO: utt m detected 165.198375/165.198375 secs (100.00 %) speech 
+2024-04-18 20:14:19,400 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0074 length=165.198 secs elapsed-time=1750.18 ms. read-time=1569.58 ms. write-time=180.60 ms. real-time-factor=94.39x-range=[-32101.326058-32707.696067]
+2024-04-18 20:14:20,319 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0075
+2024-04-18 20:14:20,319 (preprocess-audio-files:94) INFO: utt m detected 254.693875/254.693875 secs (100.00 %) speech 
+2024-04-18 20:14:20,541 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0075 length=254.694 secs elapsed-time=1140.50 ms. read-time=918.65 ms. write-time=221.84 ms. real-time-factor=223.32x-range=[-32766.007704-29307.097917]
+2024-04-18 20:14:21,509 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0076
+2024-04-18 20:14:21,510 (preprocess-audio-files:94) INFO: utt m detected 274.337938/274.337938 secs (100.00 %) speech 
+2024-04-18 20:14:21,699 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0076 length=274.338 secs elapsed-time=1157.20 ms. read-time=968.27 ms. write-time=188.93 ms. real-time-factor=237.07x-range=[-32766.952183-28373.181911]
+2024-04-18 20:14:22,166 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0077
+2024-04-18 20:14:22,167 (preprocess-audio-files:94) INFO: utt m detected 166.060438/166.060438 secs (100.00 %) speech 
+2024-04-18 20:14:22,319 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0077 length=166.060 secs elapsed-time=620.55 ms. read-time=467.90 ms. write-time=152.65 ms. real-time-factor=267.60x-range=[-32766.010305-31109.040324]
+2024-04-18 20:14:23,021 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0078
+2024-04-18 20:14:23,021 (preprocess-audio-files:94) INFO: utt m detected 166.713500/166.713500 secs (100.00 %) speech 
+2024-04-18 20:14:23,180 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0078 length=166.714 secs elapsed-time=860.81 ms. read-time=701.34 ms. write-time=159.47 ms. real-time-factor=193.67x-range=[-32765.991436-32719.010060]
+2024-04-18 20:14:23,713 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0079
+2024-04-18 20:14:23,714 (preprocess-audio-files:94) INFO: utt m detected 53.368187/53.368187 secs (100.00 %) speech 
+2024-04-18 20:14:23,767 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0079 length=53.368 secs elapsed-time=586.47 ms. read-time=532.95 ms. write-time=53.52 ms. real-time-factor=91.00x-range=[-32765.952747-30181.126202]
+2024-04-18 20:14:24,189 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0080
+2024-04-18 20:14:24,189 (preprocess-audio-files:94) INFO: utt m detected 203.640000/203.640000 secs (100.00 %) speech 
+2024-04-18 20:14:24,344 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0080 length=203.640 secs elapsed-time=576.10 ms. read-time=422.02 ms. write-time=154.08 ms. real-time-factor=353.48x-range=[-31715.875999-32751.156563]
+2024-04-18 20:14:25,096 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0081
+2024-04-18 20:14:25,097 (preprocess-audio-files:94) INFO: utt m detected 410.540437/410.540437 secs (100.00 %) speech 
+2024-04-18 20:14:25,368 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0081 length=410.540 secs elapsed-time=1024.13 ms. read-time=752.83 ms. write-time=271.30 ms. real-time-factor=400.87x-range=[-32716.433844-31055.619928]
+2024-04-18 20:14:25,369 (preprocess-audio-files:131) INFO: writing time durations to /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio/utt2dur.musan_music.9
+# Accounting: time=54 threads=1
+# Finished at Thu Apr 18 20:14:25 EDT 2024 with status 0

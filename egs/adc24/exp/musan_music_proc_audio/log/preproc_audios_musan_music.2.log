@@ -1,0 +1,204 @@
+# Running on b08
+# Started at Thu Apr 18 20:13:31 EDT 2024
+# hyp_utils/conda_env.sh preprocess-audio-files.py --output-audio-format flac --remove-dc-offset --write-time-durs /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio/utt2dur.musan_music.2 --part-idx 2 --num-parts 10 --input data/musan_music/wav.scp --output-path /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio --output-script /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio/wav.musan_music.2.scp 
+Python 3.6.13 :: Anaconda, Inc.
+2024-04-18 20:13:34,926 (preprocess-audio-files:57) INFO: input_args={'part_idx': 2, 'num_parts': 10, 'wav_scale': 32767}
+2024-04-18 20:13:34,926 (preprocess-audio-files:58) INFO: output_args={'audio_format': 'flac', 'audio_subtype': None}
+2024-04-18 20:13:35,387 (preprocess-audio-files:74) INFO: Processing audio music-fma-0066
+2024-04-18 20:13:35,387 (preprocess-audio-files:94) INFO: utt m detected 164.440000/164.440000 secs (100.00 %) speech 
+2024-04-18 20:13:35,491 (preprocess-audio-files:126) INFO: Packed audio music-fma-0066 length=164.440 secs elapsed-time=562.53 ms. read-time=458.93 ms. write-time=103.60 ms. real-time-factor=292.32x-range=[-32508.218217-32622.794081]
+2024-04-18 20:13:36,436 (preprocess-audio-files:74) INFO: Processing audio music-fma-0067
+2024-04-18 20:13:36,437 (preprocess-audio-files:94) INFO: utt m detected 277.002000/277.002000 secs (100.00 %) speech 
+2024-04-18 20:13:36,599 (preprocess-audio-files:126) INFO: Packed audio music-fma-0067 length=277.002 secs elapsed-time=1107.41 ms. read-time=945.55 ms. write-time=161.86 ms. real-time-factor=250.14x-range=[-32737.002658-32589.003690]
+2024-04-18 20:13:37,086 (preprocess-audio-files:74) INFO: Processing audio music-fma-0068
+2024-04-18 20:13:37,086 (preprocess-audio-files:94) INFO: utt m detected 251.167000/251.167000 secs (100.00 %) speech 
+2024-04-18 20:13:37,238 (preprocess-audio-files:126) INFO: Packed audio music-fma-0068 length=251.167 secs elapsed-time=638.67 ms. read-time=487.57 ms. write-time=151.10 ms. real-time-factor=393.26x-range=[-32690.509530-32635.496818]
+2024-04-18 20:13:37,987 (preprocess-audio-files:74) INFO: Processing audio music-fma-0069
+2024-04-18 20:13:37,987 (preprocess-audio-files:94) INFO: utt m detected 225.541000/225.541000 secs (100.00 %) speech 
+2024-04-18 20:13:38,129 (preprocess-audio-files:126) INFO: Packed audio music-fma-0069 length=225.541 secs elapsed-time=891.00 ms. read-time=749.48 ms. write-time=141.52 ms. real-time-factor=253.13x-range=[-32333.958977-32862.051338]
+2024-04-18 20:13:39,001 (preprocess-audio-files:74) INFO: Processing audio music-fma-0070
+2024-04-18 20:13:39,002 (preprocess-audio-files:94) INFO: utt m detected 236.016312/236.016312 secs (100.00 %) speech 
+2024-04-18 20:13:39,246 (preprocess-audio-files:126) INFO: Packed audio music-fma-0070 length=236.016 secs elapsed-time=1117.29 ms. read-time=872.47 ms. write-time=244.82 ms. real-time-factor=211.24x-range=[-32588.553438-32763.452116]
+2024-04-18 20:13:39,815 (preprocess-audio-files:74) INFO: Processing audio music-fma-0071
+2024-04-18 20:13:39,816 (preprocess-audio-files:94) INFO: utt m detected 246.230000/246.230000 secs (100.00 %) speech 
+2024-04-18 20:13:40,026 (preprocess-audio-files:126) INFO: Packed audio music-fma-0071 length=246.230 secs elapsed-time=778.83 ms. read-time=569.08 ms. write-time=209.75 ms. real-time-factor=316.15x-range=[-32793.902663-32475.105424]
+2024-04-18 20:13:40,308 (preprocess-audio-files:74) INFO: Processing audio music-fma-0072
+2024-04-18 20:13:40,308 (preprocess-audio-files:94) INFO: utt m detected 130.690625/130.690625 secs (100.00 %) speech 
+2024-04-18 20:13:40,389 (preprocess-audio-files:126) INFO: Packed audio music-fma-0072 length=130.691 secs elapsed-time=363.17 ms. read-time=282.23 ms. write-time=80.94 ms. real-time-factor=359.86x-range=[-32698.970776-27254.199543]
+2024-04-18 20:13:40,861 (preprocess-audio-files:74) INFO: Processing audio music-fma-0073
+2024-04-18 20:13:40,861 (preprocess-audio-files:94) INFO: utt m detected 229.224000/229.224000 secs (100.00 %) speech 
+2024-04-18 20:13:41,018 (preprocess-audio-files:126) INFO: Packed audio music-fma-0073 length=229.224 secs elapsed-time=628.32 ms. read-time=471.91 ms. write-time=156.41 ms. real-time-factor=364.82x-range=[-32705.207840-32485.802627]
+2024-04-18 20:13:41,714 (preprocess-audio-files:74) INFO: Processing audio music-fma-0074
+2024-04-18 20:13:41,714 (preprocess-audio-files:94) INFO: utt m detected 346.906125/346.906125 secs (100.00 %) speech 
+2024-04-18 20:13:41,981 (preprocess-audio-files:126) INFO: Packed audio music-fma-0074 length=346.906 secs elapsed-time=962.63 ms. read-time=696.15 ms. write-time=266.48 ms. real-time-factor=360.37x-range=[-31679.364018-32764.669246]
+2024-04-18 20:13:43,040 (preprocess-audio-files:74) INFO: Processing audio music-fma-0075
+2024-04-18 20:13:43,040 (preprocess-audio-files:94) INFO: utt m detected 304.718375/304.718375 secs (100.00 %) speech 
+2024-04-18 20:13:43,265 (preprocess-audio-files:126) INFO: Packed audio music-fma-0075 length=304.718 secs elapsed-time=1284.02 ms. read-time=1059.38 ms. write-time=224.65 ms. real-time-factor=237.32x-range=[-32766.815453-32529.191810]
+2024-04-18 20:13:44,131 (preprocess-audio-files:74) INFO: Processing audio music-fma-0076
+2024-04-18 20:13:44,132 (preprocess-audio-files:94) INFO: utt m detected 235.937938/235.937938 secs (100.00 %) speech 
+2024-04-18 20:13:44,331 (preprocess-audio-files:126) INFO: Packed audio music-fma-0076 length=235.938 secs elapsed-time=1065.38 ms. read-time=866.45 ms. write-time=198.93 ms. real-time-factor=221.46x-range=[-32766.371212-32704.630710]
+2024-04-18 20:13:44,897 (preprocess-audio-files:74) INFO: Processing audio music-fma-0077
+2024-04-18 20:13:44,897 (preprocess-audio-files:94) INFO: utt m detected 256.914312/256.914312 secs (100.00 %) speech 
+2024-04-18 20:13:45,104 (preprocess-audio-files:126) INFO: Packed audio music-fma-0077 length=256.914 secs elapsed-time=772.34 ms. read-time=565.79 ms. write-time=206.55 ms. real-time-factor=332.64x-range=[-31844.620557-32766.407610]
+2024-04-18 20:13:45,603 (preprocess-audio-files:74) INFO: Processing audio music-fma-0078
+2024-04-18 20:13:45,604 (preprocess-audio-files:94) INFO: utt m detected 299.389375/299.389375 secs (100.00 %) speech 
+2024-04-18 20:13:45,826 (preprocess-audio-files:126) INFO: Packed audio music-fma-0078 length=299.389 secs elapsed-time=721.67 ms. read-time=499.67 ms. write-time=222.00 ms. real-time-factor=414.86x-range=[-31764.004532-32766.026107]
+2024-04-18 20:13:46,162 (preprocess-audio-files:74) INFO: Processing audio music-fma-0079
+2024-04-18 20:13:46,163 (preprocess-audio-files:94) INFO: utt m detected 222.511000/222.511000 secs (100.00 %) speech 
+2024-04-18 20:13:46,327 (preprocess-audio-files:126) INFO: Packed audio music-fma-0079 length=222.511 secs elapsed-time=500.44 ms. read-time=336.80 ms. write-time=163.65 ms. real-time-factor=444.63x-range=[-32765.810707-31048.241784]
+2024-04-18 20:13:46,767 (preprocess-audio-files:74) INFO: Processing audio music-fma-0080
+2024-04-18 20:13:46,767 (preprocess-audio-files:94) INFO: utt m detected 216.032625/216.032625 secs (100.00 %) speech 
+2024-04-18 20:13:46,971 (preprocess-audio-files:126) INFO: Packed audio music-fma-0080 length=216.033 secs elapsed-time=643.90 ms. read-time=440.32 ms. write-time=203.58 ms. real-time-factor=335.51x-range=[-32766.075922-32091.944708]
+2024-04-18 20:13:47,589 (preprocess-audio-files:74) INFO: Processing audio music-fma-0081
+2024-04-18 20:13:47,590 (preprocess-audio-files:94) INFO: utt m detected 282.044000/282.044000 secs (100.00 %) speech 
+2024-04-18 20:13:47,792 (preprocess-audio-files:126) INFO: Packed audio music-fma-0081 length=282.044 secs elapsed-time=820.95 ms. read-time=618.71 ms. write-time=202.24 ms. real-time-factor=343.56x-range=[-32767.018489-32759.981724]
+2024-04-18 20:13:47,990 (preprocess-audio-files:74) INFO: Processing audio music-fma-0082
+2024-04-18 20:13:47,990 (preprocess-audio-files:94) INFO: utt m detected 74.083000/74.083000 secs (100.00 %) speech 
+2024-04-18 20:13:48,065 (preprocess-audio-files:126) INFO: Packed audio music-fma-0082 length=74.083 secs elapsed-time=273.03 ms. read-time=197.74 ms. write-time=75.29 ms. real-time-factor=271.33x-range=[-32766.123202-30409.948759]
+2024-04-18 20:13:48,621 (preprocess-audio-files:74) INFO: Processing audio music-fma-0083
+2024-04-18 20:13:48,621 (preprocess-audio-files:94) INFO: utt m detected 259.030000/259.030000 secs (100.00 %) speech 
+2024-04-18 20:13:48,754 (preprocess-audio-files:126) INFO: Packed audio music-fma-0083 length=259.030 secs elapsed-time=688.18 ms. read-time=555.85 ms. write-time=132.33 ms. real-time-factor=376.40x-range=[-32766.114604-32580.891103]
+2024-04-18 20:13:49,693 (preprocess-audio-files:74) INFO: Processing audio music-fma-0084
+2024-04-18 20:13:49,693 (preprocess-audio-files:94) INFO: utt m detected 260.048000/260.048000 secs (100.00 %) speech 
+2024-04-18 20:13:49,894 (preprocess-audio-files:126) INFO: Packed audio music-fma-0084 length=260.048 secs elapsed-time=1139.53 ms. read-time=939.09 ms. write-time=200.43 ms. real-time-factor=228.21x-range=[-32766.369044-32544.637761]
+2024-04-18 20:13:50,503 (preprocess-audio-files:74) INFO: Processing audio music-fma-0086
+2024-04-18 20:13:50,504 (preprocess-audio-files:94) INFO: utt m detected 299.728000/299.728000 secs (100.00 %) speech 
+2024-04-18 20:13:50,752 (preprocess-audio-files:126) INFO: Packed audio music-fma-0086 length=299.728 secs elapsed-time=858.27 ms. read-time=609.64 ms. write-time=248.63 ms. real-time-factor=349.22x-range=[-31979.970782-32766.053265]
+2024-04-18 20:13:51,073 (preprocess-audio-files:74) INFO: Processing audio music-fma-0087
+2024-04-18 20:13:51,073 (preprocess-audio-files:94) INFO: utt m detected 160.417000/160.417000 secs (100.00 %) speech 
+2024-04-18 20:13:51,214 (preprocess-audio-files:126) INFO: Packed audio music-fma-0087 length=160.417 secs elapsed-time=461.11 ms. read-time=320.81 ms. write-time=140.30 ms. real-time-factor=347.89x-range=[-32229.784760-32777.231323]
+2024-04-18 20:13:51,855 (preprocess-audio-files:74) INFO: Processing audio music-fma-0088
+2024-04-18 20:13:51,855 (preprocess-audio-files:94) INFO: utt m detected 167.810625/167.810625 secs (100.00 %) speech 
+2024-04-18 20:13:51,967 (preprocess-audio-files:126) INFO: Packed audio music-fma-0088 length=167.811 secs elapsed-time=753.10 ms. read-time=641.18 ms. write-time=111.92 ms. real-time-factor=222.83x-range=[-32741.126512-31919.900130]
+2024-04-18 20:13:52,293 (preprocess-audio-files:74) INFO: Processing audio music-fma-0089
+2024-04-18 20:13:52,293 (preprocess-audio-files:94) INFO: utt m detected 186.592625/186.592625 secs (100.00 %) speech 
+2024-04-18 20:13:52,500 (preprocess-audio-files:126) INFO: Packed audio music-fma-0089 length=186.593 secs elapsed-time=532.92 ms. read-time=325.89 ms. write-time=207.03 ms. real-time-factor=350.13x-range=[-32097.246220-32784.773677]
+2024-04-18 20:13:53,331 (preprocess-audio-files:74) INFO: Processing audio music-fma-0090
+2024-04-18 20:13:53,331 (preprocess-audio-files:94) INFO: utt m detected 229.694687/229.694687 secs (100.00 %) speech 
+2024-04-18 20:13:53,461 (preprocess-audio-files:126) INFO: Packed audio music-fma-0090 length=229.695 secs elapsed-time=960.50 ms. read-time=830.77 ms. write-time=129.73 ms. real-time-factor=239.14x-range=[-31242.666435-32754.380470]
+2024-04-18 20:13:54,348 (preprocess-audio-files:74) INFO: Processing audio music-fma-0091
+2024-04-18 20:13:54,349 (preprocess-audio-files:94) INFO: utt m detected 240.770625/240.770625 secs (100.00 %) speech 
+2024-04-18 20:13:54,530 (preprocess-audio-files:126) INFO: Packed audio music-fma-0091 length=240.771 secs elapsed-time=1068.00 ms. read-time=887.39 ms. write-time=180.61 ms. real-time-factor=225.44x-range=[-31418.378580-32735.663534]
+2024-04-18 20:13:55,025 (preprocess-audio-files:74) INFO: Processing audio music-fma-0092
+2024-04-18 20:13:55,026 (preprocess-audio-files:94) INFO: utt m detected 257.384500/257.384500 secs (100.00 %) speech 
+2024-04-18 20:13:55,188 (preprocess-audio-files:126) INFO: Packed audio music-fma-0092 length=257.385 secs elapsed-time=657.67 ms. read-time=495.86 ms. write-time=161.81 ms. real-time-factor=391.36x-range=[-32594.257078-31526.786043]
+2024-04-18 20:13:55,990 (preprocess-audio-files:74) INFO: Processing audio music-fma-0093
+2024-04-18 20:13:55,990 (preprocess-audio-files:94) INFO: utt m detected 218.409812/218.409812 secs (100.00 %) speech 
+2024-04-18 20:13:56,174 (preprocess-audio-files:126) INFO: Packed audio music-fma-0093 length=218.410 secs elapsed-time=985.69 ms. read-time=802.38 ms. write-time=183.32 ms. real-time-factor=221.58x-range=[-32808.403235-30247.672387]
+2024-04-18 20:13:56,639 (preprocess-audio-files:74) INFO: Processing audio music-fma-0094
+2024-04-18 20:13:56,640 (preprocess-audio-files:94) INFO: utt m detected 272.065000/272.065000 secs (100.00 %) speech 
+2024-04-18 20:13:56,807 (preprocess-audio-files:126) INFO: Packed audio music-fma-0094 length=272.065 secs elapsed-time=632.68 ms. read-time=465.78 ms. write-time=166.90 ms. real-time-factor=430.02x-range=[-33397.142601-31769.868599]
+2024-04-18 20:13:57,257 (preprocess-audio-files:74) INFO: Processing audio music-fma-0095
+2024-04-18 20:13:57,258 (preprocess-audio-files:94) INFO: utt m detected 202.109375/202.109375 secs (100.00 %) speech 
+2024-04-18 20:13:57,437 (preprocess-audio-files:126) INFO: Packed audio music-fma-0095 length=202.109 secs elapsed-time=630.19 ms. read-time=450.75 ms. write-time=179.45 ms. real-time-factor=320.71x-range=[-32765.171627-29596.925175]
+2024-04-18 20:13:57,901 (preprocess-audio-files:74) INFO: Processing audio music-fma-0096
+2024-04-18 20:13:57,901 (preprocess-audio-files:94) INFO: utt m detected 204.225313/204.225313 secs (100.00 %) speech 
+2024-04-18 20:13:58,043 (preprocess-audio-files:126) INFO: Packed audio music-fma-0096 length=204.225 secs elapsed-time=605.40 ms. read-time=464.14 ms. write-time=141.26 ms. real-time-factor=337.34x-range=[-32431.256056-32769.754107]
+2024-04-18 20:13:58,591 (preprocess-audio-files:74) INFO: Processing audio music-fma-0097
+2024-04-18 20:13:58,591 (preprocess-audio-files:94) INFO: utt m detected 242.285000/242.285000 secs (100.00 %) speech 
+2024-04-18 20:13:58,727 (preprocess-audio-files:126) INFO: Packed audio music-fma-0097 length=242.285 secs elapsed-time=683.69 ms. read-time=547.95 ms. write-time=135.75 ms. real-time-factor=354.38x-range=[-32523.984574-32754.023238]
+2024-04-18 20:13:59,185 (preprocess-audio-files:74) INFO: Processing audio music-fma-0098
+2024-04-18 20:13:59,186 (preprocess-audio-files:94) INFO: utt m detected 201.586000/201.586000 secs (100.00 %) speech 
+2024-04-18 20:13:59,366 (preprocess-audio-files:126) INFO: Packed audio music-fma-0098 length=201.586 secs elapsed-time=638.96 ms. read-time=458.53 ms. write-time=180.43 ms. real-time-factor=315.49x-range=[-32760.959962-32576.046050]
+2024-04-18 20:13:59,735 (preprocess-audio-files:74) INFO: Processing audio music-fma-0099
+2024-04-18 20:13:59,735 (preprocess-audio-files:94) INFO: utt m detected 170.997000/170.997000 secs (100.00 %) speech 
+2024-04-18 20:13:59,840 (preprocess-audio-files:126) INFO: Packed audio music-fma-0099 length=170.997 secs elapsed-time=473.83 ms. read-time=369.13 ms. write-time=104.71 ms. real-time-factor=360.88x-range=[-31688.158886-32844.871662]
+2024-04-18 20:14:00,351 (preprocess-audio-files:74) INFO: Processing audio music-fma-0100
+2024-04-18 20:14:00,351 (preprocess-audio-files:94) INFO: utt m detected 48.065000/48.065000 secs (100.00 %) speech 
+2024-04-18 20:14:00,396 (preprocess-audio-files:126) INFO: Packed audio music-fma-0100 length=48.065 secs elapsed-time=555.51 ms. read-time=510.70 ms. write-time=44.80 ms. real-time-factor=86.52x-range=[-27932.026526-32785.120477]
+2024-04-18 20:14:00,906 (preprocess-audio-files:74) INFO: Processing audio music-fma-0101
+2024-04-18 20:14:00,906 (preprocess-audio-files:94) INFO: utt m detected 262.504500/262.504500 secs (100.00 %) speech 
+2024-04-18 20:14:01,098 (preprocess-audio-files:126) INFO: Packed audio music-fma-0101 length=262.505 secs elapsed-time=701.36 ms. read-time=509.73 ms. write-time=191.63 ms. real-time-factor=374.28x-range=[-33621.283305-31281.735952]
+2024-04-18 20:14:02,013 (preprocess-audio-files:74) INFO: Processing audio music-fma-0102
+2024-04-18 20:14:02,013 (preprocess-audio-files:94) INFO: utt m detected 212.009813/212.009813 secs (100.00 %) speech 
+2024-04-18 20:14:02,187 (preprocess-audio-files:126) INFO: Packed audio music-fma-0102 length=212.010 secs elapsed-time=1089.05 ms. read-time=915.44 ms. write-time=173.61 ms. real-time-factor=194.67x-range=[-34414.803797-30442.216863]
+2024-04-18 20:14:02,555 (preprocess-audio-files:74) INFO: Processing audio music-fma-0103
+2024-04-18 20:14:02,555 (preprocess-audio-files:94) INFO: utt m detected 160.992625/160.992625 secs (100.00 %) speech 
+2024-04-18 20:14:02,711 (preprocess-audio-files:126) INFO: Packed audio music-fma-0103 length=160.993 secs elapsed-time=524.08 ms. read-time=367.94 ms. write-time=156.14 ms. real-time-factor=307.19x-range=[-33171.489454-31388.540270]
+2024-04-18 20:14:03,238 (preprocess-audio-files:74) INFO: Processing audio music-fma-0104
+2024-04-18 20:14:03,239 (preprocess-audio-files:94) INFO: utt m detected 198.034312/198.034312 secs (100.00 %) speech 
+2024-04-18 20:14:03,390 (preprocess-audio-files:126) INFO: Packed audio music-fma-0104 length=198.034 secs elapsed-time=678.34 ms. read-time=527.04 ms. write-time=151.31 ms. real-time-factor=291.94x-range=[-32765.196534-30443.874420]
+2024-04-18 20:14:03,931 (preprocess-audio-files:74) INFO: Processing audio music-fma-0105
+2024-04-18 20:14:03,932 (preprocess-audio-files:94) INFO: utt m detected 203.781250/203.781250 secs (100.00 %) speech 
+2024-04-18 20:14:04,067 (preprocess-audio-files:126) INFO: Packed audio music-fma-0105 length=203.781 secs elapsed-time=676.85 ms. read-time=541.26 ms. write-time=135.60 ms. real-time-factor=301.07x-range=[-32765.456113-32528.551211]
+2024-04-18 20:14:04,452 (preprocess-audio-files:74) INFO: Processing audio music-fma-0106
+2024-04-18 20:14:04,453 (preprocess-audio-files:94) INFO: utt m detected 199.340438/199.340438 secs (100.00 %) speech 
+2024-04-18 20:14:04,652 (preprocess-audio-files:126) INFO: Packed audio music-fma-0106 length=199.340 secs elapsed-time=584.65 ms. read-time=385.37 ms. write-time=199.28 ms. real-time-factor=340.95x-range=[-32216.033448-32765.983397]
+2024-04-18 20:14:05,025 (preprocess-audio-files:74) INFO: Processing audio music-fma-0107
+2024-04-18 20:14:05,026 (preprocess-audio-files:94) INFO: utt m detected 185.652250/185.652250 secs (100.00 %) speech 
+2024-04-18 20:14:05,192 (preprocess-audio-files:126) INFO: Packed audio music-fma-0107 length=185.652 secs elapsed-time=539.20 ms. read-time=373.32 ms. write-time=165.88 ms. real-time-factor=344.31x-range=[-32767.259695-30997.794291]
+2024-04-18 20:14:05,615 (preprocess-audio-files:74) INFO: Processing audio music-fma-0108
+2024-04-18 20:14:05,616 (preprocess-audio-files:94) INFO: utt m detected 176.509375/176.509375 secs (100.00 %) speech 
+2024-04-18 20:14:05,720 (preprocess-audio-files:126) INFO: Packed audio music-fma-0108 length=176.509 secs elapsed-time=528.13 ms. read-time=423.76 ms. write-time=104.37 ms. real-time-factor=334.21x-range=[-31709.206594-32763.825785]
+2024-04-18 20:14:07,027 (preprocess-audio-files:74) INFO: Processing audio music-fma-0109
+2024-04-18 20:14:07,028 (preprocess-audio-files:94) INFO: utt m detected 232.829375/232.829375 secs (100.00 %) speech 
+2024-04-18 20:14:07,196 (preprocess-audio-files:126) INFO: Packed audio music-fma-0109 length=232.829 secs elapsed-time=1476.06 ms. read-time=1307.31 ms. write-time=168.75 ms. real-time-factor=157.74x-range=[-32761.577043-32007.446303]
+2024-04-18 20:14:07,621 (preprocess-audio-files:74) INFO: Processing audio music-fma-0110
+2024-04-18 20:14:07,621 (preprocess-audio-files:94) INFO: utt m detected 225.959188/225.959188 secs (100.00 %) speech 
+2024-04-18 20:14:07,848 (preprocess-audio-files:126) INFO: Packed audio music-fma-0110 length=225.959 secs elapsed-time=650.79 ms. read-time=424.51 ms. write-time=226.28 ms. real-time-factor=347.21x-range=[-32766.652088-32370.360027]
+2024-04-18 20:14:08,337 (preprocess-audio-files:74) INFO: Processing audio music-fma-0111
+2024-04-18 20:14:08,337 (preprocess-audio-files:94) INFO: utt m detected 238.602438/238.602438 secs (100.00 %) speech 
+2024-04-18 20:14:08,496 (preprocess-audio-files:126) INFO: Packed audio music-fma-0111 length=238.602 secs elapsed-time=647.84 ms. read-time=488.93 ms. write-time=158.90 ms. real-time-factor=368.31x-range=[-32765.215533-29933.870984]
+2024-04-18 20:14:08,928 (preprocess-audio-files:74) INFO: Processing audio music-fma-0112
+2024-04-18 20:14:08,929 (preprocess-audio-files:94) INFO: utt m detected 229.668563/229.668563 secs (100.00 %) speech 
+2024-04-18 20:14:09,091 (preprocess-audio-files:126) INFO: Packed audio music-fma-0112 length=229.669 secs elapsed-time=594.60 ms. read-time=432.57 ms. write-time=162.04 ms. real-time-factor=386.25x-range=[-29651.024244-32766.070879]
+2024-04-18 20:14:09,431 (preprocess-audio-files:74) INFO: Processing audio music-fma-0113
+2024-04-18 20:14:09,432 (preprocess-audio-files:94) INFO: utt m detected 177.240813/177.240813 secs (100.00 %) speech 
+2024-04-18 20:14:09,580 (preprocess-audio-files:126) INFO: Packed audio music-fma-0113 length=177.241 secs elapsed-time=488.81 ms. read-time=340.61 ms. write-time=148.20 ms. real-time-factor=362.60x-range=[-32763.127260-31580.909056]
+2024-04-18 20:14:10,068 (preprocess-audio-files:74) INFO: Processing audio music-fma-0114
+2024-04-18 20:14:10,068 (preprocess-audio-files:94) INFO: utt m detected 206.785313/206.785313 secs (100.00 %) speech 
+2024-04-18 20:14:10,251 (preprocess-audio-files:126) INFO: Packed audio music-fma-0114 length=206.785 secs elapsed-time=670.62 ms. read-time=488.13 ms. write-time=182.49 ms. real-time-factor=308.35x-range=[-32762.610525-30929.445689]
+2024-04-18 20:14:11,063 (preprocess-audio-files:74) INFO: Processing audio music-fma-0115
+2024-04-18 20:14:11,063 (preprocess-audio-files:94) INFO: utt m detected 166.191000/166.191000 secs (100.00 %) speech 
+2024-04-18 20:14:11,223 (preprocess-audio-files:126) INFO: Packed audio music-fma-0115 length=166.191 secs elapsed-time=972.08 ms. read-time=812.33 ms. write-time=159.75 ms. real-time-factor=170.96x-range=[-32851.720919-31074.328153]
+2024-04-18 20:14:11,416 (preprocess-audio-files:74) INFO: Processing audio music-fma-0116
+2024-04-18 20:14:11,417 (preprocess-audio-files:94) INFO: utt m detected 83.095500/83.095500 secs (100.00 %) speech 
+2024-04-18 20:14:11,507 (preprocess-audio-files:126) INFO: Packed audio music-fma-0116 length=83.096 secs elapsed-time=283.84 ms. read-time=193.47 ms. write-time=90.37 ms. real-time-factor=292.76x-range=[-29743.062811-32758.029749]
+2024-04-18 20:14:11,775 (preprocess-audio-files:74) INFO: Processing audio music-fma-0117
+2024-04-18 20:14:11,775 (preprocess-audio-files:94) INFO: utt m detected 121.887375/121.887375 secs (100.00 %) speech 
+2024-04-18 20:14:11,846 (preprocess-audio-files:126) INFO: Packed audio music-fma-0117 length=121.887 secs elapsed-time=338.48 ms. read-time=267.97 ms. write-time=70.51 ms. real-time-factor=360.10x-range=[-31958.356752-32720.669341]
+2024-04-18 20:14:12,239 (preprocess-audio-files:74) INFO: Processing audio music-fma-0118
+2024-04-18 20:14:12,239 (preprocess-audio-files:94) INFO: utt m detected 170.135000/170.135000 secs (100.00 %) speech 
+2024-04-18 20:14:12,341 (preprocess-audio-files:126) INFO: Packed audio music-fma-0118 length=170.135 secs elapsed-time=494.88 ms. read-time=392.87 ms. write-time=102.01 ms. real-time-factor=343.79x-range=[-31916.218668-32765.807333]
+2024-04-18 20:14:13,681 (preprocess-audio-files:74) INFO: Processing audio music-fma-0119
+2024-04-18 20:14:13,681 (preprocess-audio-files:94) INFO: utt m detected 702.537000/702.537000 secs (100.00 %) speech 
+2024-04-18 20:14:14,083 (preprocess-audio-files:126) INFO: Packed audio music-fma-0119 length=702.537 secs elapsed-time=1742.07 ms. read-time=1340.01 ms. write-time=402.05 ms. real-time-factor=403.28x-range=[-32766.094362-32637.909606]
+2024-04-18 20:14:15,115 (preprocess-audio-files:74) INFO: Processing audio music-fma-0120
+2024-04-18 20:14:15,115 (preprocess-audio-files:94) INFO: utt m detected 500.532000/500.532000 secs (100.00 %) speech 
+2024-04-18 20:14:15,452 (preprocess-audio-files:126) INFO: Packed audio music-fma-0120 length=500.532 secs elapsed-time=1368.74 ms. read-time=1031.42 ms. write-time=337.32 ms. real-time-factor=365.69x-range=[-31028.190874-32765.862226]
+2024-04-18 20:14:16,656 (preprocess-audio-files:74) INFO: Processing audio music-fma-0121
+2024-04-18 20:14:16,656 (preprocess-audio-files:94) INFO: utt m detected 655.124000/655.124000 secs (100.00 %) speech 
+2024-04-18 20:14:17,154 (preprocess-audio-files:126) INFO: Packed audio music-fma-0121 length=655.124 secs elapsed-time=1701.65 ms. read-time=1203.53 ms. write-time=498.11 ms. real-time-factor=384.99x-range=[-32350.030265-32765.982492]
+2024-04-18 20:14:18,104 (preprocess-audio-files:74) INFO: Processing audio music-fma-0122
+2024-04-18 20:14:18,104 (preprocess-audio-files:94) INFO: utt m detected 440.973000/440.973000 secs (100.00 %) speech 
+2024-04-18 20:14:18,382 (preprocess-audio-files:126) INFO: Packed audio music-fma-0122 length=440.973 secs elapsed-time=1227.67 ms. read-time=949.43 ms. write-time=278.24 ms. real-time-factor=359.19x-range=[-32765.994660-30280.081268]
+2024-04-18 20:14:19,259 (preprocess-audio-files:74) INFO: Processing audio music-fma-0123
+2024-04-18 20:14:19,260 (preprocess-audio-files:94) INFO: utt m detected 521.926000/521.926000 secs (100.00 %) speech 
+2024-04-18 20:14:19,573 (preprocess-audio-files:126) INFO: Packed audio music-fma-0123 length=521.926 secs elapsed-time=1190.53 ms. read-time=877.02 ms. write-time=313.51 ms. real-time-factor=438.40x-range=[-32356.974416-32765.038157]
+2024-04-18 20:14:20,064 (preprocess-audio-files:74) INFO: Processing audio music-fma-0124
+2024-04-18 20:14:20,064 (preprocess-audio-files:94) INFO: utt m detected 225.123000/225.123000 secs (100.00 %) speech 
+2024-04-18 20:14:20,288 (preprocess-audio-files:126) INFO: Packed audio music-fma-0124 length=225.123 secs elapsed-time=714.81 ms. read-time=490.92 ms. write-time=223.89 ms. real-time-factor=314.94x-range=[-32765.597635-32530.409628]
+2024-04-18 20:14:20,515 (preprocess-audio-files:74) INFO: Processing audio music-fma-wa-0000
+2024-04-18 20:14:20,515 (preprocess-audio-files:94) INFO: utt m detected 96.626937/96.626937 secs (100.00 %) speech 
+2024-04-18 20:14:20,614 (preprocess-audio-files:126) INFO: Packed audio music-fma-wa-0000 length=96.627 secs elapsed-time=325.42 ms. read-time=226.81 ms. write-time=98.60 ms. real-time-factor=296.93x-range=[-30073.080151-32766.002094]
+2024-04-18 20:14:20,852 (preprocess-audio-files:74) INFO: Processing audio music-fma-wa-0001
+2024-04-18 20:14:20,853 (preprocess-audio-files:94) INFO: utt m detected 97.227750/97.227750 secs (100.00 %) speech 
+2024-04-18 20:14:20,908 (preprocess-audio-files:126) INFO: Packed audio music-fma-wa-0001 length=97.228 secs elapsed-time=294.09 ms. read-time=238.33 ms. write-time=55.76 ms. real-time-factor=330.61x-range=[-31155.030419-32766.018805]
+2024-04-18 20:14:21,508 (preprocess-audio-files:74) INFO: Processing audio music-fma-wa-0002
+2024-04-18 20:14:21,509 (preprocess-audio-files:94) INFO: utt m detected 73.900437/73.900437 secs (100.00 %) speech 
+2024-04-18 20:14:21,587 (preprocess-audio-files:126) INFO: Packed audio music-fma-wa-0002 length=73.900 secs elapsed-time=678.87 ms. read-time=600.34 ms. write-time=78.53 ms. real-time-factor=108.86x-range=[-32765.837417-32760.162827]
+2024-04-18 20:14:22,349 (preprocess-audio-files:74) INFO: Processing audio music-fma-wa-0003
+2024-04-18 20:14:22,349 (preprocess-audio-files:94) INFO: utt m detected 297.247375/297.247375 secs (100.00 %) speech 
+2024-04-18 20:14:22,515 (preprocess-audio-files:126) INFO: Packed audio music-fma-wa-0003 length=297.247 secs elapsed-time=927.53 ms. read-time=761.35 ms. write-time=166.19 ms. real-time-factor=320.47x-range=[-30991.164601-32326.903026]
+2024-04-18 20:14:22,952 (preprocess-audio-files:74) INFO: Processing audio music-fma-wa-0004
+2024-04-18 20:14:22,953 (preprocess-audio-files:94) INFO: utt m detected 273.632625/273.632625 secs (100.00 %) speech 
+2024-04-18 20:14:23,192 (preprocess-audio-files:126) INFO: Packed audio music-fma-wa-0004 length=273.633 secs elapsed-time=676.17 ms. read-time=437.42 ms. write-time=238.75 ms. real-time-factor=404.68x-range=[-32767.041486-28511.088397]
+2024-04-18 20:14:24,102 (preprocess-audio-files:74) INFO: Processing audio music-fma-wa-0005
+2024-04-18 20:14:24,102 (preprocess-audio-files:94) INFO: utt m detected 202.919187/202.919187 secs (100.00 %) speech 
+2024-04-18 20:14:24,231 (preprocess-audio-files:126) INFO: Packed audio music-fma-wa-0005 length=202.919 secs elapsed-time=1039.54 ms. read-time=910.41 ms. write-time=129.13 ms. real-time-factor=195.20x-range=[-32766.286883-30468.783277]
+2024-04-18 20:14:24,537 (preprocess-audio-files:74) INFO: Processing audio music-fma-wa-0006
+2024-04-18 20:14:24,537 (preprocess-audio-files:94) INFO: utt m detected 157.413875/157.413875 secs (100.00 %) speech 
+2024-04-18 20:14:24,713 (preprocess-audio-files:126) INFO: Packed audio music-fma-wa-0006 length=157.414 secs elapsed-time=480.84 ms. read-time=305.58 ms. write-time=175.26 ms. real-time-factor=327.37x-range=[-33222.717373-31927.294346]
+2024-04-18 20:14:24,714 (preprocess-audio-files:131) INFO: writing time durations to /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio/utt2dur.musan_music.2
+# Accounting: time=54 threads=1
+# Finished at Thu Apr 18 20:14:25 EDT 2024 with status 0

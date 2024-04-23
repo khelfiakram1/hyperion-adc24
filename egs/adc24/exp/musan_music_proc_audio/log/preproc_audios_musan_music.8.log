@@ -1,0 +1,204 @@
+# Running on b15
+# Started at Thu Apr 18 20:13:31 EDT 2024
+# hyp_utils/conda_env.sh preprocess-audio-files.py --output-audio-format flac --remove-dc-offset --write-time-durs /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio/utt2dur.musan_music.8 --part-idx 8 --num-parts 10 --input data/musan_music/wav.scp --output-path /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio --output-script /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio/wav.musan_music.8.scp 
+Python 3.6.13 :: Anaconda, Inc.
+2024-04-18 20:13:35,895 (preprocess-audio-files:57) INFO: input_args={'part_idx': 8, 'num_parts': 10, 'wav_scale': 32767}
+2024-04-18 20:13:35,895 (preprocess-audio-files:58) INFO: output_args={'audio_format': 'flac', 'audio_subtype': None}
+2024-04-18 20:13:36,623 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0163
+2024-04-18 20:13:36,623 (preprocess-audio-files:94) INFO: utt m detected 266.631000/266.631000 secs (100.00 %) speech 
+2024-04-18 20:13:36,818 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0163 length=266.631 secs elapsed-time=919.49 ms. read-time=725.23 ms. write-time=194.26 ms. real-time-factor=289.98x-range=[-32743.524606-32428.486441]
+2024-04-18 20:13:37,756 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0164
+2024-04-18 20:13:37,757 (preprocess-audio-files:94) INFO: utt m detected 229.903000/229.903000 secs (100.00 %) speech 
+2024-04-18 20:13:37,972 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0164 length=229.903 secs elapsed-time=1154.35 ms. read-time=938.93 ms. write-time=215.42 ms. real-time-factor=199.16x-range=[-31987.042831-32716.982498]
+2024-04-18 20:13:38,985 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0165
+2024-04-18 20:13:38,985 (preprocess-audio-files:94) INFO: utt m detected 222.746000/222.746000 secs (100.00 %) speech 
+2024-04-18 20:13:39,249 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0165 length=222.746 secs elapsed-time=1276.42 ms. read-time=1012.81 ms. write-time=263.61 ms. real-time-factor=174.51x-range=[-32340.464306-32761.548878]
+2024-04-18 20:13:39,886 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0166
+2024-04-18 20:13:39,886 (preprocess-audio-files:94) INFO: utt m detected 249.652000/249.652000 secs (100.00 %) speech 
+2024-04-18 20:13:40,030 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0166 length=249.652 secs elapsed-time=781.01 ms. read-time=636.78 ms. write-time=144.23 ms. real-time-factor=319.65x-range=[-32768.296407-31740.734873]
+2024-04-18 20:13:40,744 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0167
+2024-04-18 20:13:40,744 (preprocess-audio-files:94) INFO: utt m detected 267.493000/267.493000 secs (100.00 %) speech 
+2024-04-18 20:13:40,940 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0167 length=267.493 secs elapsed-time=909.73 ms. read-time=713.44 ms. write-time=196.30 ms. real-time-factor=294.03x-range=[-32774.014814-32187.002672]
+2024-04-18 20:13:41,596 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0168
+2024-04-18 20:13:41,596 (preprocess-audio-files:94) INFO: utt m detected 244.453000/244.453000 secs (100.00 %) speech 
+2024-04-18 20:13:41,811 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0168 length=244.453 secs elapsed-time=870.00 ms. read-time=655.88 ms. write-time=214.12 ms. real-time-factor=280.98x-range=[-32319.012818-32766.000884]
+2024-04-18 20:13:42,689 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0169
+2024-04-18 20:13:42,689 (preprocess-audio-files:94) INFO: utt m detected 266.945000/266.945000 secs (100.00 %) speech 
+2024-04-18 20:13:42,913 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0169 length=266.945 secs elapsed-time=1102.25 ms. read-time=878.57 ms. write-time=223.67 ms. real-time-factor=242.18x-range=[-32772.569008-31754.461724]
+2024-04-18 20:13:43,398 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0170
+2024-04-18 20:13:43,399 (preprocess-audio-files:94) INFO: utt m detected 212.662000/212.662000 secs (100.00 %) speech 
+2024-04-18 20:13:43,587 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0170 length=212.662 secs elapsed-time=674.02 ms. read-time=485.32 ms. write-time=188.70 ms. real-time-factor=315.51x-range=[-32765.979819-30124.100870]
+2024-04-18 20:13:44,402 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0171
+2024-04-18 20:13:44,402 (preprocess-audio-files:94) INFO: utt m detected 231.784000/231.784000 secs (100.00 %) speech 
+2024-04-18 20:13:44,539 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0171 length=231.784 secs elapsed-time=950.96 ms. read-time=814.61 ms. write-time=136.34 ms. real-time-factor=243.74x-range=[-32752.314656-32560.692088]
+2024-04-18 20:13:45,255 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0172
+2024-04-18 20:13:45,255 (preprocess-audio-files:94) INFO: utt m detected 258.220000/258.220000 secs (100.00 %) speech 
+2024-04-18 20:13:45,450 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0172 length=258.220 secs elapsed-time=910.70 ms. read-time=716.42 ms. write-time=194.28 ms. real-time-factor=283.54x-range=[-32853.729601-29739.360152]
+2024-04-18 20:13:46,076 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0173
+2024-04-18 20:13:46,076 (preprocess-audio-files:94) INFO: utt m detected 224.522000/224.522000 secs (100.00 %) speech 
+2024-04-18 20:13:46,263 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0173 length=224.522 secs elapsed-time=813.06 ms. read-time=626.49 ms. write-time=186.57 ms. real-time-factor=276.14x-range=[-32725.298627-32748.703204]
+2024-04-18 20:13:47,055 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0174
+2024-04-18 20:13:47,056 (preprocess-audio-files:94) INFO: utt m detected 316.943000/316.943000 secs (100.00 %) speech 
+2024-04-18 20:13:47,292 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0174 length=316.943 secs elapsed-time=1029.08 ms. read-time=792.33 ms. write-time=236.75 ms. real-time-factor=307.99x-range=[-32143.978855-32846.037747]
+2024-04-18 20:13:47,992 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0175
+2024-04-18 20:13:47,992 (preprocess-audio-files:94) INFO: utt m detected 256.496000/256.496000 secs (100.00 %) speech 
+2024-04-18 20:13:48,195 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0175 length=256.496 secs elapsed-time=902.30 ms. read-time=699.32 ms. write-time=202.98 ms. real-time-factor=284.27x-range=[-32550.576909-31656.463588]
+2024-04-18 20:13:48,745 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0176
+2024-04-18 20:13:48,745 (preprocess-audio-files:94) INFO: utt m detected 229.982000/229.982000 secs (100.00 %) speech 
+2024-04-18 20:13:48,887 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0176 length=229.982 secs elapsed-time=691.93 ms. read-time=550.14 ms. write-time=141.78 ms. real-time-factor=332.38x-range=[-32791.438494-31711.592970]
+2024-04-18 20:13:49,694 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0177
+2024-04-18 20:13:49,694 (preprocess-audio-files:94) INFO: utt m detected 206.367000/206.367000 secs (100.00 %) speech 
+2024-04-18 20:13:49,920 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0177 length=206.367 secs elapsed-time=1032.53 ms. read-time=806.62 ms. write-time=225.91 ms. real-time-factor=199.87x-range=[-31202.483578-32846.561741]
+2024-04-18 20:13:50,401 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0178
+2024-04-18 20:13:50,401 (preprocess-audio-files:94) INFO: utt m detected 202.997000/202.997000 secs (100.00 %) speech 
+2024-04-18 20:13:50,586 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0178 length=202.997 secs elapsed-time=665.09 ms. read-time=480.53 ms. write-time=184.56 ms. real-time-factor=305.22x-range=[-33087.924514-32219.082413]
+2024-04-18 20:13:51,098 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0179
+2024-04-18 20:13:51,098 (preprocess-audio-files:94) INFO: utt m detected 240.065000/240.065000 secs (100.00 %) speech 
+2024-04-18 20:13:51,304 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0179 length=240.065 secs elapsed-time=718.50 ms. read-time=512.32 ms. write-time=206.18 ms. real-time-factor=334.12x-range=[-32766.259118-31993.764503]
+2024-04-18 20:13:51,924 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0180
+2024-04-18 20:13:51,925 (preprocess-audio-files:94) INFO: utt m detected 209.214000/209.214000 secs (100.00 %) speech 
+2024-04-18 20:13:52,114 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0180 length=209.214 secs elapsed-time=809.59 ms. read-time=620.39 ms. write-time=189.20 ms. real-time-factor=258.42x-range=[-29431.283675-32767.818101]
+2024-04-18 20:13:52,447 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0181
+2024-04-18 20:13:52,448 (preprocess-audio-files:94) INFO: utt m detected 251.872000/251.872000 secs (100.00 %) speech 
+2024-04-18 20:13:52,609 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0181 length=251.872 secs elapsed-time=494.39 ms. read-time=333.32 ms. write-time=161.07 ms. real-time-factor=509.46x-range=[-27901.528213-32770.620163]
+2024-04-18 20:13:53,582 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0182
+2024-04-18 20:13:53,582 (preprocess-audio-files:94) INFO: utt m detected 271.124000/271.124000 secs (100.00 %) speech 
+2024-04-18 20:13:53,785 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0182 length=271.124 secs elapsed-time=1176.20 ms. read-time=972.91 ms. write-time=203.29 ms. real-time-factor=230.51x-range=[-28299.904264-32771.231936]
+2024-04-18 20:13:54,648 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0183
+2024-04-18 20:13:54,649 (preprocess-audio-files:94) INFO: utt m detected 249.782000/249.782000 secs (100.00 %) speech 
+2024-04-18 20:13:54,862 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0183 length=249.782 secs elapsed-time=1076.53 ms. read-time=863.10 ms. write-time=213.42 ms. real-time-factor=232.03x-range=[-32764.768718-32402.242482]
+2024-04-18 20:13:55,433 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0184
+2024-04-18 20:13:55,433 (preprocess-audio-files:94) INFO: utt m detected 248.946000/248.946000 secs (100.00 %) speech 
+2024-04-18 20:13:55,622 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0184 length=248.946 secs elapsed-time=759.94 ms. read-time=570.98 ms. write-time=188.96 ms. real-time-factor=327.59x-range=[-32767.257477-30669.806518]
+2024-04-18 20:13:56,319 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0185
+2024-04-18 20:13:56,320 (preprocess-audio-files:94) INFO: utt m detected 233.325000/233.325000 secs (100.00 %) speech 
+2024-04-18 20:13:56,503 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0185 length=233.325 secs elapsed-time=880.18 ms. read-time=697.01 ms. write-time=183.17 ms. real-time-factor=265.09x-range=[-32805.558937-30673.503776]
+2024-04-18 20:13:57,187 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0186
+2024-04-18 20:13:57,187 (preprocess-audio-files:94) INFO: utt m detected 255.973000/255.973000 secs (100.00 %) speech 
+2024-04-18 20:13:57,370 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0186 length=255.973 secs elapsed-time=866.70 ms. read-time=684.22 ms. write-time=182.48 ms. real-time-factor=295.34x-range=[-27469.231746-32769.929844]
+2024-04-18 20:13:58,006 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0187
+2024-04-18 20:13:58,006 (preprocess-audio-files:94) INFO: utt m detected 341.551000/341.551000 secs (100.00 %) speech 
+2024-04-18 20:13:58,255 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0187 length=341.551 secs elapsed-time=884.74 ms. read-time=635.91 ms. write-time=248.83 ms. real-time-factor=386.05x-range=[-32770.528458-29230.579361]
+2024-04-18 20:13:59,035 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0188
+2024-04-18 20:13:59,036 (preprocess-audio-files:94) INFO: utt m detected 319.712000/319.712000 secs (100.00 %) speech 
+2024-04-18 20:13:59,377 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0188 length=319.712 secs elapsed-time=1122.16 ms. read-time=780.44 ms. write-time=341.72 ms. real-time-factor=284.91x-range=[-32363.935955-32776.076068]
+2024-04-18 20:14:00,530 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0189
+2024-04-18 20:14:00,530 (preprocess-audio-files:94) INFO: utt m detected 347.846000/347.846000 secs (100.00 %) speech 
+2024-04-18 20:14:00,802 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0189 length=347.846 secs elapsed-time=1424.49 ms. read-time=1152.58 ms. write-time=271.90 ms. real-time-factor=244.19x-range=[-32128.054424-32773.964863]
+2024-04-18 20:14:01,937 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0190
+2024-04-18 20:14:01,938 (preprocess-audio-files:94) INFO: utt m detected 320.000000/320.000000 secs (100.00 %) speech 
+2024-04-18 20:14:02,168 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0190 length=320.000 secs elapsed-time=1365.64 ms. read-time=1135.24 ms. write-time=230.39 ms. real-time-factor=234.32x-range=[-32640.280171-32776.723400]
+2024-04-18 20:14:02,524 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0191
+2024-04-18 20:14:02,525 (preprocess-audio-files:94) INFO: utt m detected 155.193000/155.193000 secs (100.00 %) speech 
+2024-04-18 20:14:02,658 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0191 length=155.193 secs elapsed-time=489.57 ms. read-time=356.34 ms. write-time=133.23 ms. real-time-factor=317.00x-range=[-32759.777464-30631.287935]
+2024-04-18 20:14:04,277 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0192
+2024-04-18 20:14:04,277 (preprocess-audio-files:94) INFO: utt m detected 633.991000/633.991000 secs (100.00 %) speech 
+2024-04-18 20:14:04,714 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0192 length=633.991 secs elapsed-time=2055.94 ms. read-time=1618.80 ms. write-time=437.14 ms. real-time-factor=308.37x-range=[-32756.675354-32476.333832]
+2024-04-18 20:14:05,093 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0193
+2024-04-18 20:14:05,094 (preprocess-audio-files:94) INFO: utt m detected 168.724000/168.724000 secs (100.00 %) speech 
+2024-04-18 20:14:05,249 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0193 length=168.724 secs elapsed-time=534.83 ms. read-time=379.08 ms. write-time=155.75 ms. real-time-factor=315.47x-range=[-32389.444894-32772.566459]
+2024-04-18 20:14:06,227 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0194
+2024-04-18 20:14:06,228 (preprocess-audio-files:94) INFO: utt m detected 240.169000/240.169000 secs (100.00 %) speech 
+2024-04-18 20:14:06,424 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0194 length=240.169 secs elapsed-time=1174.47 ms. read-time=978.02 ms. write-time=196.45 ms. real-time-factor=204.49x-range=[-32741.449321-32722.552815]
+2024-04-18 20:14:07,143 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0195
+2024-04-18 20:14:07,144 (preprocess-audio-files:94) INFO: utt m detected 183.902000/183.902000 secs (100.00 %) speech 
+2024-04-18 20:14:07,321 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0195 length=183.902 secs elapsed-time=896.20 ms. read-time=719.51 ms. write-time=176.69 ms. real-time-factor=205.20x-range=[-32751.797475-31242.249522]
+2024-04-18 20:14:07,777 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0196
+2024-04-18 20:14:07,778 (preprocess-audio-files:94) INFO: utt m detected 240.117000/240.117000 secs (100.00 %) speech 
+2024-04-18 20:14:07,930 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0196 length=240.117 secs elapsed-time=608.73 ms. read-time=456.73 ms. write-time=151.99 ms. real-time-factor=394.46x-range=[-32947.671193-32223.339885]
+2024-04-18 20:14:08,547 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0197
+2024-04-18 20:14:08,547 (preprocess-audio-files:94) INFO: utt m detected 206.733000/206.733000 secs (100.00 %) speech 
+2024-04-18 20:14:08,715 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0197 length=206.733 secs elapsed-time=784.80 ms. read-time=617.11 ms. write-time=167.69 ms. real-time-factor=263.42x-range=[-30971.984703-32811.068733]
+2024-04-18 20:14:09,241 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0198
+2024-04-18 20:14:09,242 (preprocess-audio-files:94) INFO: utt m detected 225.358000/225.358000 secs (100.00 %) speech 
+2024-04-18 20:14:09,424 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0198 length=225.358 secs elapsed-time=709.10 ms. read-time=526.57 ms. write-time=182.53 ms. real-time-factor=317.81x-range=[-31533.763847-32820.272164]
+2024-04-18 20:14:10,029 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0199
+2024-04-18 20:14:10,030 (preprocess-audio-files:94) INFO: utt m detected 188.055000/188.055000 secs (100.00 %) speech 
+2024-04-18 20:14:10,248 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0199 length=188.055 secs elapsed-time=823.14 ms. read-time=605.37 ms. write-time=217.77 ms. real-time-factor=228.46x-range=[-32766.091244-31230.955661]
+2024-04-18 20:14:11,172 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0200
+2024-04-18 20:14:11,172 (preprocess-audio-files:94) INFO: utt m detected 208.404000/208.404000 secs (100.00 %) speech 
+2024-04-18 20:14:11,329 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0200 length=208.404 secs elapsed-time=1081.24 ms. read-time=924.48 ms. write-time=156.75 ms. real-time-factor=192.75x-range=[-32766.033333-31129.016685]
+2024-04-18 20:14:12,065 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0201
+2024-04-18 20:14:12,065 (preprocess-audio-files:94) INFO: utt m detected 273.110000/273.110000 secs (100.00 %) speech 
+2024-04-18 20:14:12,215 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0201 length=273.110 secs elapsed-time=885.63 ms. read-time=735.99 ms. write-time=149.64 ms. real-time-factor=308.38x-range=[-32767.052859-23897.217832]
+2024-04-18 20:14:12,747 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0202
+2024-04-18 20:14:12,747 (preprocess-audio-files:94) INFO: utt m detected 209.214000/209.214000 secs (100.00 %) speech 
+2024-04-18 20:14:12,903 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0202 length=209.214 secs elapsed-time=687.56 ms. read-time=532.12 ms. write-time=155.44 ms. real-time-factor=304.29x-range=[-26990.271525-32765.904805]
+2024-04-18 20:14:13,611 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0203
+2024-04-18 20:14:13,612 (preprocess-audio-files:94) INFO: utt m detected 309.760000/309.760000 secs (100.00 %) speech 
+2024-04-18 20:14:13,876 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0203 length=309.760 secs elapsed-time=973.12 ms. read-time=708.56 ms. write-time=264.55 ms. real-time-factor=318.32x-range=[-32762.568441-31392.473642]
+2024-04-18 20:14:14,763 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0204
+2024-04-18 20:14:14,764 (preprocess-audio-files:94) INFO: utt m detected 315.951000/315.951000 secs (100.00 %) speech 
+2024-04-18 20:14:15,053 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0204 length=315.951 secs elapsed-time=1176.80 ms. read-time=887.33 ms. write-time=289.47 ms. real-time-factor=268.48x-range=[-31244.242433-33147.792418]
+2024-04-18 20:14:15,910 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0205
+2024-04-18 20:14:15,910 (preprocess-audio-files:94) INFO: utt m detected 365.897000/365.897000 secs (100.00 %) speech 
+2024-04-18 20:14:16,170 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0205 length=365.897 secs elapsed-time=1115.96 ms. read-time=856.68 ms. write-time=259.28 ms. real-time-factor=327.88x-range=[-32760.417860-32406.593340]
+2024-04-18 20:14:16,627 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0206
+2024-04-18 20:14:16,628 (preprocess-audio-files:94) INFO: utt m detected 148.062000/148.062000 secs (100.00 %) speech 
+2024-04-18 20:14:16,733 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0206 length=148.062 secs elapsed-time=563.18 ms. read-time=457.79 ms. write-time=105.38 ms. real-time-factor=262.90x-range=[-32760.101985-32514.905919]
+2024-04-18 20:14:17,493 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0207
+2024-04-18 20:14:17,494 (preprocess-audio-files:94) INFO: utt m detected 309.995000/309.995000 secs (100.00 %) speech 
+2024-04-18 20:14:17,729 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0207 length=309.995 secs elapsed-time=995.86 ms. read-time=760.36 ms. write-time=235.50 ms. real-time-factor=311.28x-range=[-32778.305143-32164.712893]
+2024-04-18 20:14:18,415 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0208
+2024-04-18 20:14:18,416 (preprocess-audio-files:94) INFO: utt m detected 357.642000/357.642000 secs (100.00 %) speech 
+2024-04-18 20:14:18,694 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0208 length=357.642 secs elapsed-time=964.64 ms. read-time=686.32 ms. write-time=278.32 ms. real-time-factor=370.75x-range=[-32787.581967-32119.437168]
+2024-04-18 20:14:19,164 (preprocess-audio-files:74) INFO: Processing audio music-jamendo-0209
+2024-04-18 20:14:19,164 (preprocess-audio-files:94) INFO: utt m detected 229.929000/229.929000 secs (100.00 %) speech 
+2024-04-18 20:14:19,345 (preprocess-audio-files:126) INFO: Packed audio music-jamendo-0209 length=229.929 secs elapsed-time=650.67 ms. read-time=469.78 ms. write-time=180.88 ms. real-time-factor=353.37x-range=[-32466.481598-32769.527496]
+2024-04-18 20:14:19,777 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0000
+2024-04-18 20:14:19,777 (preprocess-audio-files:94) INFO: utt m detected 171.984000/171.984000 secs (100.00 %) speech 
+2024-04-18 20:14:19,931 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0000 length=171.984 secs elapsed-time=586.11 ms. read-time=432.10 ms. write-time=154.01 ms. real-time-factor=293.43x-range=[-32197.771855-32766.245540]
+2024-04-18 20:14:20,509 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0001
+2024-04-18 20:14:20,510 (preprocess-audio-files:94) INFO: utt m detected 307.644063/307.644063 secs (100.00 %) speech 
+2024-04-18 20:14:20,698 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0001 length=307.644 secs elapsed-time=766.54 ms. read-time=577.82 ms. write-time=188.72 ms. real-time-factor=401.34x-range=[-32766.444102-30014.639913]
+2024-04-18 20:14:21,472 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0002
+2024-04-18 20:14:21,472 (preprocess-audio-files:94) INFO: utt m detected 150.883250/150.883250 secs (100.00 %) speech 
+2024-04-18 20:14:21,606 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0002 length=150.883 secs elapsed-time=907.34 ms. read-time=773.52 ms. write-time=133.82 ms. real-time-factor=166.29x-range=[-32792.434448-31170.613495]
+2024-04-18 20:14:21,762 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0003
+2024-04-18 20:14:21,762 (preprocess-audio-files:94) INFO: utt m detected 46.315125/46.315125 secs (100.00 %) speech 
+2024-04-18 20:14:21,823 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0003 length=46.315 secs elapsed-time=216.83 ms. read-time=155.68 ms. write-time=61.16 ms. real-time-factor=213.60x-range=[-32119.152899-32765.866907]
+2024-04-18 20:14:22,320 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0004
+2024-04-18 20:14:22,321 (preprocess-audio-files:94) INFO: utt m detected 216.816000/216.816000 secs (100.00 %) speech 
+2024-04-18 20:14:22,492 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0004 length=216.816 secs elapsed-time=668.54 ms. read-time=497.33 ms. write-time=171.21 ms. real-time-factor=324.31x-range=[-32765.969522-29799.121085]
+2024-04-18 20:14:22,955 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0005
+2024-04-18 20:14:22,956 (preprocess-audio-files:94) INFO: utt m detected 255.268563/255.268563 secs (100.00 %) speech 
+2024-04-18 20:14:23,172 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0005 length=255.269 secs elapsed-time=680.11 ms. read-time=463.57 ms. write-time=216.54 ms. real-time-factor=375.34x-range=[-31543.036269-32766.001115]
+2024-04-18 20:14:24,015 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0006
+2024-04-18 20:14:24,016 (preprocess-audio-files:94) INFO: utt m detected 228.388563/228.388563 secs (100.00 %) speech 
+2024-04-18 20:14:24,160 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0006 length=228.389 secs elapsed-time=987.68 ms. read-time=843.02 ms. write-time=144.66 ms. real-time-factor=231.24x-range=[-32765.987847-32328.025580]
+2024-04-18 20:14:24,330 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0007
+2024-04-18 20:14:24,330 (preprocess-audio-files:94) INFO: utt m detected 106.135500/106.135500 secs (100.00 %) speech 
+2024-04-18 20:14:24,419 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0007 length=106.135 secs elapsed-time=258.61 ms. read-time=169.71 ms. write-time=88.89 ms. real-time-factor=410.41x-range=[-31272.987121-32766.058503]
+2024-04-18 20:14:24,790 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0008
+2024-04-18 20:14:24,790 (preprocess-audio-files:94) INFO: utt m detected 169.090625/169.090625 secs (100.00 %) speech 
+2024-04-18 20:14:24,929 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0008 length=169.091 secs elapsed-time=509.07 ms. read-time=370.72 ms. write-time=138.35 ms. real-time-factor=332.16x-range=[-32765.990514-32511.017329]
+2024-04-18 20:14:25,181 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0009
+2024-04-18 20:14:25,182 (preprocess-audio-files:94) INFO: utt m detected 161.520000/161.520000 secs (100.00 %) speech 
+2024-04-18 20:14:25,318 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0009 length=161.520 secs elapsed-time=388.83 ms. read-time=252.99 ms. write-time=135.84 ms. real-time-factor=415.40x-range=[-32763.042584-32302.971698]
+2024-04-18 20:14:25,420 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0010
+2024-04-18 20:14:25,420 (preprocess-audio-files:94) INFO: utt m detected 52.320000/52.320000 secs (100.00 %) speech 
+2024-04-18 20:14:25,469 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0010 length=52.320 secs elapsed-time=151.36 ms. read-time=102.16 ms. write-time=49.20 ms. real-time-factor=345.67x-range=[-32765.879583-30412.192316]
+2024-04-18 20:14:25,667 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0011
+2024-04-18 20:14:25,667 (preprocess-audio-files:94) INFO: utt m detected 156.055500/156.055500 secs (100.00 %) speech 
+2024-04-18 20:14:25,769 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0011 length=156.055 secs elapsed-time=299.84 ms. read-time=197.57 ms. write-time=102.27 ms. real-time-factor=520.46x-range=[-32744.156308-32557.850772]
+2024-04-18 20:14:26,190 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0012
+2024-04-18 20:14:26,191 (preprocess-audio-files:94) INFO: utt m detected 230.922438/230.922438 secs (100.00 %) speech 
+2024-04-18 20:14:26,387 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0012 length=230.922 secs elapsed-time=617.31 ms. read-time=421.36 ms. write-time=195.94 ms. real-time-factor=374.08x-range=[-32650.880360-32507.131114]
+2024-04-18 20:14:26,594 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0013
+2024-04-18 20:14:26,594 (preprocess-audio-files:94) INFO: utt m detected 149.080813/149.080813 secs (100.00 %) speech 
+2024-04-18 20:14:26,714 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0013 length=149.081 secs elapsed-time=327.33 ms. read-time=206.97 ms. write-time=120.36 ms. real-time-factor=455.44x-range=[-32557.952545-32766.053864]
+2024-04-18 20:14:27,772 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0014
+2024-04-18 20:14:27,772 (preprocess-audio-files:94) INFO: utt m detected 197.568000/197.568000 secs (100.00 %) speech 
+2024-04-18 20:14:27,931 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0014 length=197.568 secs elapsed-time=1216.04 ms. read-time=1057.27 ms. write-time=158.76 ms. real-time-factor=162.47x-range=[-32559.075232-32765.931146]
+2024-04-18 20:14:28,534 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0015
+2024-04-18 20:14:28,534 (preprocess-audio-files:94) INFO: utt m detected 204.042438/204.042438 secs (100.00 %) speech 
+2024-04-18 20:14:28,695 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0015 length=204.042 secs elapsed-time=764.44 ms. read-time=602.98 ms. write-time=161.45 ms. real-time-factor=266.92x-range=[-32749.438529-31694.594735]
+2024-04-18 20:14:29,084 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0016
+2024-04-18 20:14:29,084 (preprocess-audio-files:94) INFO: utt m detected 218.226937/218.226937 secs (100.00 %) speech 
+2024-04-18 20:14:29,222 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0016 length=218.227 secs elapsed-time=526.27 ms. read-time=388.56 ms. write-time=137.71 ms. real-time-factor=414.66x-range=[-32199.799776-32767.217528]
+2024-04-18 20:14:29,429 (preprocess-audio-files:74) INFO: Processing audio music-rfm-0017
+2024-04-18 20:14:29,429 (preprocess-audio-files:94) INFO: utt m detected 247.776000/247.776000 secs (100.00 %) speech 
+2024-04-18 20:14:29,680 (preprocess-audio-files:126) INFO: Packed audio music-rfm-0017 length=247.776 secs elapsed-time=457.30 ms. read-time=207.08 ms. write-time=250.22 ms. real-time-factor=541.83x-range=[-32974.558745-29073.547639]
+2024-04-18 20:14:29,681 (preprocess-audio-files:131) INFO: writing time durations to /home/mkhelfi1/hyperion/egs/adc24/exp/musan_music_proc_audio/utt2dur.musan_music.8
+# Accounting: time=59 threads=1
+# Finished at Thu Apr 18 20:14:30 EDT 2024 with status 0

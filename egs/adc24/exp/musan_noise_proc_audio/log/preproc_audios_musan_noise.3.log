@@ -1,0 +1,288 @@
+# Running on b02
+# Started at Thu Apr 18 20:11:20 EDT 2024
+# hyp_utils/conda_env.sh preprocess-audio-files.py --output-audio-format flac --remove-dc-offset --write-time-durs /home/mkhelfi1/hyperion/egs/adc24/exp/musan_noise_proc_audio/utt2dur.musan_noise.3 --part-idx 3 --num-parts 10 --input data/musan_noise/wav.scp --output-path /home/mkhelfi1/hyperion/egs/adc24/exp/musan_noise_proc_audio --output-script /home/mkhelfi1/hyperion/egs/adc24/exp/musan_noise_proc_audio/wav.musan_noise.3.scp 
+Python 3.6.13 :: Anaconda, Inc.
+2024-04-18 20:12:24,345 (preprocess-audio-files:57) INFO: input_args={'part_idx': 3, 'num_parts': 10, 'wav_scale': 32767}
+2024-04-18 20:12:24,345 (preprocess-audio-files:58) INFO: output_args={'audio_format': 'flac', 'audio_subtype': None}
+2024-04-18 20:12:24,531 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0186
+2024-04-18 20:12:24,531 (preprocess-audio-files:94) INFO: utt n detected 2.836187/2.836187 secs (100.00 %) speech 
+2024-04-18 20:12:24,547 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0186 length=2.836 secs elapsed-time=198.65 ms. read-time=182.60 ms. write-time=16.05 ms. real-time-factor=14.28x-range=[-25627.752642-32776.464948]
+2024-04-18 20:12:25,266 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0187
+2024-04-18 20:12:25,266 (preprocess-audio-files:94) INFO: utt n detected 6.423063/6.423063 secs (100.00 %) speech 
+2024-04-18 20:12:25,299 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0187 length=6.423 secs elapsed-time=751.18 ms. read-time=718.75 ms. write-time=32.44 ms. real-time-factor=8.55x-range=[-32765.510501-32715.491116]
+2024-04-18 20:12:25,343 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0188
+2024-04-18 20:12:25,344 (preprocess-audio-files:94) INFO: utt n detected 9.551187/9.551187 secs (100.00 %) speech 
+2024-04-18 20:12:25,375 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0188 length=9.551 secs elapsed-time=76.13 ms. read-time=44.98 ms. write-time=31.15 ms. real-time-factor=125.46x-range=[-31342.619786-32816.422176]
+2024-04-18 20:12:25,424 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0189
+2024-04-18 20:12:25,425 (preprocess-audio-files:94) INFO: utt n detected 6.840187/6.840187 secs (100.00 %) speech 
+2024-04-18 20:12:25,451 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0189 length=6.840 secs elapsed-time=76.26 ms. read-time=49.61 ms. write-time=26.65 ms. real-time-factor=89.70x-range=[-26039.607903-32775.597144]
+2024-04-18 20:12:25,499 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0190
+2024-04-18 20:12:25,500 (preprocess-audio-files:94) INFO: utt n detected 6.131125/6.131125 secs (100.00 %) speech 
+2024-04-18 20:12:25,529 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0190 length=6.131 secs elapsed-time=77.80 ms. read-time=48.06 ms. write-time=29.74 ms. real-time-factor=78.81x-range=[-30894.996589-32775.060296]
+2024-04-18 20:12:25,935 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0191
+2024-04-18 20:12:25,936 (preprocess-audio-files:94) INFO: utt n detected 3.962312/3.962312 secs (100.00 %) speech 
+2024-04-18 20:12:25,943 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0191 length=3.962 secs elapsed-time=413.77 ms. read-time=406.27 ms. write-time=7.50 ms. real-time-factor=9.58x-range=[-32767.226171-31649.807917]
+2024-04-18 20:12:25,987 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0192
+2024-04-18 20:12:25,988 (preprocess-audio-files:94) INFO: utt n detected 6.673312/6.673312 secs (100.00 %) speech 
+2024-04-18 20:12:25,997 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0192 length=6.673 secs elapsed-time=53.45 ms. read-time=44.08 ms. write-time=9.37 ms. real-time-factor=124.85x-range=[-32761.470943-32601.534275]
+2024-04-18 20:12:26,032 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0193
+2024-04-18 20:12:26,032 (preprocess-audio-files:94) INFO: utt n detected 4.004000/4.004000 secs (100.00 %) speech 
+2024-04-18 20:12:26,039 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0193 length=4.004 secs elapsed-time=41.49 ms. read-time=35.14 ms. write-time=6.35 ms. real-time-factor=96.50x-range=[-32764.744777-29514.354557]
+2024-04-18 20:12:26,070 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0194
+2024-04-18 20:12:26,070 (preprocess-audio-files:94) INFO: utt n detected 7.882875/7.882875 secs (100.00 %) speech 
+2024-04-18 20:12:26,080 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0194 length=7.883 secs elapsed-time=41.22 ms. read-time=31.57 ms. write-time=9.65 ms. real-time-factor=191.24x-range=[-32762.622202-30443.448843]
+2024-04-18 20:12:26,112 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0195
+2024-04-18 20:12:26,113 (preprocess-audio-files:94) INFO: utt n detected 4.295937/4.295937 secs (100.00 %) speech 
+2024-04-18 20:12:26,122 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0195 length=4.296 secs elapsed-time=41.60 ms. read-time=32.63 ms. write-time=8.97 ms. real-time-factor=103.28x-range=[-31522.552389-32768.485544]
+2024-04-18 20:12:26,169 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0196
+2024-04-18 20:12:26,169 (preprocess-audio-files:94) INFO: utt n detected 3.628625/3.628625 secs (100.00 %) speech 
+2024-04-18 20:12:26,176 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0196 length=3.629 secs elapsed-time=54.15 ms. read-time=47.27 ms. write-time=6.88 ms. real-time-factor=67.01x-range=[-32763.549453-30174.529771]
+2024-04-18 20:12:26,591 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0197
+2024-04-18 20:12:26,592 (preprocess-audio-files:94) INFO: utt n detected 10.593937/10.593937 secs (100.00 %) speech 
+2024-04-18 20:12:26,607 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0197 length=10.594 secs elapsed-time=430.22 ms. read-time=415.23 ms. write-time=15.00 ms. real-time-factor=24.62x-range=[-32750.143904-28543.985490]
+2024-04-18 20:12:26,692 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0198
+2024-04-18 20:12:26,692 (preprocess-audio-files:94) INFO: utt n detected 9.134125/9.134125 secs (100.00 %) speech 
+2024-04-18 20:12:26,706 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0198 length=9.134 secs elapsed-time=98.90 ms. read-time=85.14 ms. write-time=13.76 ms. real-time-factor=92.36x-range=[-20954.162523-32772.197828]
+2024-04-18 20:12:27,095 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0199
+2024-04-18 20:12:27,095 (preprocess-audio-files:94) INFO: utt n detected 6.256250/6.256250 secs (100.00 %) speech 
+2024-04-18 20:12:27,106 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0199 length=6.256 secs elapsed-time=399.32 ms. read-time=389.09 ms. write-time=10.23 ms. real-time-factor=15.67x-range=[-32763.129009-15436.400013]
+2024-04-18 20:12:27,152 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0200
+2024-04-18 20:12:27,153 (preprocess-audio-files:94) INFO: utt n detected 8.758750/8.758750 secs (100.00 %) speech 
+2024-04-18 20:12:27,164 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0200 length=8.759 secs elapsed-time=58.45 ms. read-time=46.92 ms. write-time=11.53 ms. real-time-factor=149.84x-range=[-32763.620847-30619.444797]
+2024-04-18 20:12:27,224 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0201
+2024-04-18 20:12:27,224 (preprocess-audio-files:94) INFO: utt n detected 7.048687/7.048687 secs (100.00 %) speech 
+2024-04-18 20:12:27,235 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0201 length=7.049 secs elapsed-time=70.83 ms. read-time=59.88 ms. write-time=10.95 ms. real-time-factor=99.51x-range=[-25169.367168-32781.864246]
+2024-04-18 20:12:27,280 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0202
+2024-04-18 20:12:27,281 (preprocess-audio-files:94) INFO: utt n detected 10.552188/10.552188 secs (100.00 %) speech 
+2024-04-18 20:12:27,295 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0202 length=10.552 secs elapsed-time=59.76 ms. read-time=45.34 ms. write-time=14.43 ms. real-time-factor=176.57x-range=[-32539.469603-32773.537142]
+2024-04-18 20:12:27,341 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0203
+2024-04-18 20:12:27,342 (preprocess-audio-files:94) INFO: utt n detected 11.094437/11.094437 secs (100.00 %) speech 
+2024-04-18 20:12:27,358 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0203 length=11.094 secs elapsed-time=62.30 ms. read-time=46.25 ms. write-time=16.05 ms. real-time-factor=178.09x-range=[-32126.478398-32787.540523]
+2024-04-18 20:12:27,393 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0204
+2024-04-18 20:12:27,393 (preprocess-audio-files:94) INFO: utt n detected 6.381375/6.381375 secs (100.00 %) speech 
+2024-04-18 20:12:27,404 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0204 length=6.381 secs elapsed-time=45.43 ms. read-time=35.17 ms. write-time=10.27 ms. real-time-factor=140.45x-range=[-32762.813285-22873.488778]
+2024-04-18 20:12:27,450 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0205
+2024-04-18 20:12:27,450 (preprocess-audio-files:94) INFO: utt n detected 14.389375/14.389375 secs (100.00 %) speech 
+2024-04-18 20:12:27,464 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0205 length=14.389 secs elapsed-time=60.47 ms. read-time=46.20 ms. write-time=14.27 ms. real-time-factor=237.96x-range=[-22661.583814-32768.724536]
+2024-04-18 20:12:27,519 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0206
+2024-04-18 20:12:27,520 (preprocess-audio-files:94) INFO: utt n detected 2.335688/2.335688 secs (100.00 %) speech 
+2024-04-18 20:12:27,526 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0206 length=2.336 secs elapsed-time=61.32 ms. read-time=55.27 ms. write-time=6.04 ms. real-time-factor=38.09x-range=[-31849.700495-32759.327734]
+2024-04-18 20:12:27,569 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0207
+2024-04-18 20:12:27,569 (preprocess-audio-files:94) INFO: utt n detected 7.090438/7.090438 secs (100.00 %) speech 
+2024-04-18 20:12:27,581 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0207 length=7.090 secs elapsed-time=55.27 ms. read-time=43.20 ms. write-time=12.07 ms. real-time-factor=128.30x-range=[-32749.983683-22829.320119]
+2024-04-18 20:12:27,619 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0208
+2024-04-18 20:12:27,619 (preprocess-audio-files:94) INFO: utt n detected 6.464812/6.464812 secs (100.00 %) speech 
+2024-04-18 20:12:27,629 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0208 length=6.465 secs elapsed-time=47.56 ms. read-time=37.70 ms. write-time=9.86 ms. real-time-factor=135.93x-range=[-32763.343180-25181.888418]
+2024-04-18 20:12:27,654 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0209
+2024-04-18 20:12:27,654 (preprocess-audio-files:94) INFO: utt n detected 9.676312/9.676312 secs (100.00 %) speech 
+2024-04-18 20:12:27,665 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0209 length=9.676 secs elapsed-time=35.94 ms. read-time=24.60 ms. write-time=11.34 ms. real-time-factor=269.25x-range=[-32539.275324-32765.731664]
+2024-04-18 20:12:27,688 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0210
+2024-04-18 20:12:27,689 (preprocess-audio-files:94) INFO: utt n detected 5.672313/5.672313 secs (100.00 %) speech 
+2024-04-18 20:12:27,698 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0210 length=5.672 secs elapsed-time=32.51 ms. read-time=23.29 ms. write-time=9.22 ms. real-time-factor=174.50x-range=[-32764.379345-30992.674884]
+2024-04-18 20:12:27,732 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0211
+2024-04-18 20:12:27,733 (preprocess-audio-files:94) INFO: utt n detected 6.214563/6.214563 secs (100.00 %) speech 
+2024-04-18 20:12:27,744 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0211 length=6.215 secs elapsed-time=45.77 ms. read-time=34.42 ms. write-time=11.35 ms. real-time-factor=135.78x-range=[-28689.185404-32780.938619]
+2024-04-18 20:12:27,773 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0212
+2024-04-18 20:12:27,774 (preprocess-audio-files:94) INFO: utt n detected 9.551187/9.551187 secs (100.00 %) speech 
+2024-04-18 20:12:27,787 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0212 length=9.551 secs elapsed-time=43.02 ms. read-time=29.49 ms. write-time=13.52 ms. real-time-factor=222.04x-range=[-32742.603157-32356.410119]
+2024-04-18 20:12:27,822 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0213
+2024-04-18 20:12:27,823 (preprocess-audio-files:94) INFO: utt n detected 5.714062/5.714062 secs (100.00 %) speech 
+2024-04-18 20:12:27,833 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0213 length=5.714 secs elapsed-time=45.65 ms. read-time=35.41 ms. write-time=10.24 ms. real-time-factor=125.17x-range=[-32779.128380-31266.917030]
+2024-04-18 20:12:27,897 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0214
+2024-04-18 20:12:27,897 (preprocess-audio-files:94) INFO: utt n detected 8.258250/8.258250 secs (100.00 %) speech 
+2024-04-18 20:12:27,910 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0214 length=8.258 secs elapsed-time=76.39 ms. read-time=64.09 ms. write-time=12.30 ms. real-time-factor=108.11x-range=[-32768.057834-29935.028561]
+2024-04-18 20:12:27,971 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0215
+2024-04-18 20:12:27,972 (preprocess-audio-files:94) INFO: utt n detected 6.437500/6.437500 secs (100.00 %) speech 
+2024-04-18 20:12:27,980 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0215 length=6.438 secs elapsed-time=69.95 ms. read-time=61.63 ms. write-time=8.32 ms. real-time-factor=92.03x-range=[-26156.371048-32765.830735]
+2024-04-18 20:12:28,048 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0216
+2024-04-18 20:12:28,049 (preprocess-audio-files:94) INFO: utt n detected 38.458813/38.458813 secs (100.00 %) speech 
+2024-04-18 20:12:28,085 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0216 length=38.459 secs elapsed-time=105.27 ms. read-time=68.39 ms. write-time=36.88 ms. real-time-factor=365.33x-range=[-32738.847811-29866.241575]
+2024-04-18 20:12:28,126 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0217
+2024-04-18 20:12:28,126 (preprocess-audio-files:94) INFO: utt n detected 4.838188/4.838188 secs (100.00 %) speech 
+2024-04-18 20:12:28,135 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0217 length=4.838 secs elapsed-time=49.32 ms. read-time=40.79 ms. write-time=8.53 ms. real-time-factor=98.10x-range=[-32729.614168-22493.700499]
+2024-04-18 20:12:28,173 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0218
+2024-04-18 20:12:28,174 (preprocess-audio-files:94) INFO: utt n detected 6.131125/6.131125 secs (100.00 %) speech 
+2024-04-18 20:12:28,185 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0218 length=6.131 secs elapsed-time=49.33 ms. read-time=38.36 ms. write-time=10.97 ms. real-time-factor=124.29x-range=[-32630.177757-32201.843666]
+2024-04-18 20:12:28,220 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0219
+2024-04-18 20:12:28,220 (preprocess-audio-files:94) INFO: utt n detected 6.589937/6.589937 secs (100.00 %) speech 
+2024-04-18 20:12:28,232 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0219 length=6.590 secs elapsed-time=47.05 ms. read-time=35.45 ms. write-time=11.60 ms. real-time-factor=140.06x-range=[-30376.345458-32812.726106]
+2024-04-18 20:12:28,642 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0220
+2024-04-18 20:12:28,642 (preprocess-audio-files:94) INFO: utt n detected 8.466812/8.466812 secs (100.00 %) speech 
+2024-04-18 20:12:28,655 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0220 length=8.467 secs elapsed-time=423.24 ms. read-time=410.36 ms. write-time=12.88 ms. real-time-factor=20.00x-range=[-32726.624327-27335.542665]
+2024-04-18 20:12:28,683 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0221
+2024-04-18 20:12:28,683 (preprocess-audio-files:94) INFO: utt n detected 10.927563/10.927563 secs (100.00 %) speech 
+2024-04-18 20:12:28,697 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0221 length=10.928 secs elapsed-time=41.79 ms. read-time=27.87 ms. write-time=13.92 ms. real-time-factor=261.47x-range=[-32765.769411-27963.377226]
+2024-04-18 20:12:28,736 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0222
+2024-04-18 20:12:28,736 (preprocess-audio-files:94) INFO: utt n detected 1.209563/1.209563 secs (100.00 %) speech 
+2024-04-18 20:12:28,742 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0222 length=1.210 secs elapsed-time=44.32 ms. read-time=38.84 ms. write-time=5.48 ms. real-time-factor=27.29x-range=[-22403.271021-32822.043584]
+2024-04-18 20:12:28,774 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0223
+2024-04-18 20:12:28,774 (preprocess-audio-files:94) INFO: utt n detected 3.586937/3.586937 secs (100.00 %) speech 
+2024-04-18 20:12:28,782 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0223 length=3.587 secs elapsed-time=40.25 ms. read-time=32.00 ms. write-time=8.24 ms. real-time-factor=89.13x-range=[-28720.543819-32778.579319]
+2024-04-18 20:12:28,819 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0224
+2024-04-18 20:12:28,820 (preprocess-audio-files:94) INFO: utt n detected 12.804438/12.804438 secs (100.00 %) speech 
+2024-04-18 20:12:28,836 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0224 length=12.804 secs elapsed-time=53.00 ms. read-time=37.04 ms. write-time=15.96 ms. real-time-factor=241.60x-range=[-32741.081188-29239.027272]
+2024-04-18 20:12:29,235 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0225
+2024-04-18 20:12:29,235 (preprocess-audio-files:94) INFO: utt n detected 12.452000/12.452000 secs (100.00 %) speech 
+2024-04-18 20:12:29,251 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0225 length=12.452 secs elapsed-time=415.11 ms. read-time=399.03 ms. write-time=16.08 ms. real-time-factor=30.00x-range=[-32654.949422-32582.059641]
+2024-04-18 20:12:29,304 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0226
+2024-04-18 20:12:29,305 (preprocess-audio-files:94) INFO: utt n detected 26.197312/26.197312 secs (100.00 %) speech 
+2024-04-18 20:12:29,335 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0226 length=26.197 secs elapsed-time=83.80 ms. read-time=53.34 ms. write-time=30.46 ms. real-time-factor=312.62x-range=[-28264.908848-32799.227566]
+2024-04-18 20:12:29,407 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0227
+2024-04-18 20:12:29,407 (preprocess-audio-files:94) INFO: utt n detected 31.165437/31.165437 secs (100.00 %) speech 
+2024-04-18 20:12:29,441 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0227 length=31.165 secs elapsed-time=105.50 ms. read-time=71.82 ms. write-time=33.68 ms. real-time-factor=295.41x-range=[-33006.197474-29050.908635]
+2024-04-18 20:12:29,874 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0228
+2024-04-18 20:12:29,874 (preprocess-audio-files:94) INFO: utt n detected 16.648688/16.648688 secs (100.00 %) speech 
+2024-04-18 20:12:29,895 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0228 length=16.649 secs elapsed-time=454.07 ms. read-time=433.41 ms. write-time=20.66 ms. real-time-factor=36.67x-range=[-21539.807738-29996.619447]
+2024-04-18 20:12:29,937 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0229
+2024-04-18 20:12:29,938 (preprocess-audio-files:94) INFO: utt n detected 5.333938/5.333938 secs (100.00 %) speech 
+2024-04-18 20:12:29,947 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0229 length=5.334 secs elapsed-time=51.91 ms. read-time=42.59 ms. write-time=9.31 ms. real-time-factor=102.76x-range=[-32766.012556-31091.038622]
+2024-04-18 20:12:30,035 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0230
+2024-04-18 20:12:30,035 (preprocess-audio-files:94) INFO: utt n detected 41.592000/41.592000 secs (100.00 %) speech 
+2024-04-18 20:12:30,074 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0230 length=41.592 secs elapsed-time=126.37 ms. read-time=87.44 ms. write-time=38.93 ms. real-time-factor=329.13x-range=[-32754.444603-31362.598640]
+2024-04-18 20:12:30,475 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0231
+2024-04-18 20:12:30,476 (preprocess-audio-files:94) INFO: utt n detected 22.330750/22.330750 secs (100.00 %) speech 
+2024-04-18 20:12:30,512 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0231 length=22.331 secs elapsed-time=438.47 ms. read-time=401.67 ms. write-time=36.81 ms. real-time-factor=50.93x-range=[-27367.119310-32777.045180]
+2024-04-18 20:12:30,601 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0232
+2024-04-18 20:12:30,601 (preprocess-audio-files:94) INFO: utt n detected 44.289062/44.289062 secs (100.00 %) speech 
+2024-04-18 20:12:30,642 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0232 length=44.289 secs elapsed-time=129.01 ms. read-time=88.51 ms. write-time=40.51 ms. real-time-factor=343.29x-range=[-32727.418389-14509.140022]
+2024-04-18 20:12:31,412 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0233
+2024-04-18 20:12:31,412 (preprocess-audio-files:94) INFO: utt n detected 44.349500/44.349500 secs (100.00 %) speech 
+2024-04-18 20:12:31,459 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0233 length=44.349 secs elapsed-time=817.26 ms. read-time=770.06 ms. write-time=47.20 ms. real-time-factor=54.27x-range=[-32741.117505-22915.183948]
+2024-04-18 20:12:31,938 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0234
+2024-04-18 20:12:31,939 (preprocess-audio-files:94) INFO: utt n detected 75.017188/75.017188 secs (100.00 %) speech 
+2024-04-18 20:12:32,011 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0234 length=75.017 secs elapsed-time=551.94 ms. read-time=479.48 ms. write-time=72.46 ms. real-time-factor=135.92x-range=[-32753.291776-23846.980868]
+2024-04-18 20:12:32,267 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0235
+2024-04-18 20:12:32,267 (preprocess-audio-files:94) INFO: utt n detected 200.782938/200.782938 secs (100.00 %) speech 
+2024-04-18 20:12:32,405 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0235 length=200.783 secs elapsed-time=393.21 ms. read-time=255.99 ms. write-time=137.21 ms. real-time-factor=510.63x-range=[-28460.480089-32767.651320]
+2024-04-18 20:12:32,839 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0236
+2024-04-18 20:12:32,839 (preprocess-audio-files:94) INFO: utt n detected 5.564063/5.564063 secs (100.00 %) speech 
+2024-04-18 20:12:32,847 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0236 length=5.564 secs elapsed-time=442.61 ms. read-time=434.70 ms. write-time=7.90 ms. real-time-factor=12.57x-range=[-32763.362841-31307.681807]
+2024-04-18 20:12:32,886 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0237
+2024-04-18 20:12:32,886 (preprocess-audio-files:94) INFO: utt n detected 5.302875/5.302875 secs (100.00 %) speech 
+2024-04-18 20:12:32,891 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0237 length=5.303 secs elapsed-time=44.02 ms. read-time=38.61 ms. write-time=5.41 ms. real-time-factor=120.47x-range=[-31319.117108-32765.927112]
+2024-04-18 20:12:33,299 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0238
+2024-04-18 20:12:33,299 (preprocess-audio-files:94) INFO: utt n detected 13.944000/13.944000 secs (100.00 %) speech 
+2024-04-18 20:12:33,317 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0238 length=13.944 secs elapsed-time=425.57 ms. read-time=407.33 ms. write-time=18.24 ms. real-time-factor=32.77x-range=[-32765.856837-31995.166753]
+2024-04-18 20:12:33,364 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0239
+2024-04-18 20:12:33,365 (preprocess-audio-files:94) INFO: utt n detected 37.505250/37.505250 secs (100.00 %) speech 
+2024-04-18 20:12:33,410 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0239 length=37.505 secs elapsed-time=92.42 ms. read-time=47.27 ms. write-time=45.15 ms. real-time-factor=405.81x-range=[-32774.942871-30314.131745]
+2024-04-18 20:12:33,488 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0240
+2024-04-18 20:12:33,489 (preprocess-audio-files:94) INFO: utt n detected 26.226188/26.226188 secs (100.00 %) speech 
+2024-04-18 20:12:33,510 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0240 length=26.226 secs elapsed-time=100.07 ms. read-time=78.48 ms. write-time=21.59 ms. real-time-factor=262.08x-range=[-32668.116442-32764.886640]
+2024-04-18 20:12:33,903 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0241
+2024-04-18 20:12:33,903 (preprocess-audio-files:94) INFO: utt n detected 52.618500/52.618500 secs (100.00 %) speech 
+2024-04-18 20:12:33,948 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0241 length=52.618 secs elapsed-time=437.97 ms. read-time=392.79 ms. write-time=45.18 ms. real-time-factor=120.14x-range=[-32766.999834-32559.006514]
+2024-04-18 20:12:34,336 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0242
+2024-04-18 20:12:34,336 (preprocess-audio-files:94) INFO: utt n detected 23.003812/23.003812 secs (100.00 %) speech 
+2024-04-18 20:12:34,358 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0242 length=23.004 secs elapsed-time=409.67 ms. read-time=387.80 ms. write-time=21.87 ms. real-time-factor=56.15x-range=[-32764.443749-30730.618476]
+2024-04-18 20:12:34,561 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0243
+2024-04-18 20:12:34,562 (preprocess-audio-files:94) INFO: utt n detected 90.000563/90.000563 secs (100.00 %) speech 
+2024-04-18 20:12:34,656 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0243 length=90.001 secs elapsed-time=297.80 ms. read-time=203.57 ms. write-time=94.23 ms. real-time-factor=302.22x-range=[-32765.412365-26133.790119]
+2024-04-18 20:12:34,797 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0244
+2024-04-18 20:12:34,797 (preprocess-audio-files:94) INFO: utt n detected 118.840187/118.840187 secs (100.00 %) speech 
+2024-04-18 20:12:34,902 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0244 length=118.840 secs elapsed-time=245.99 ms. read-time=140.83 ms. write-time=105.17 ms. real-time-factor=483.10x-range=[-32765.458856-26033.746679]
+2024-04-18 20:12:35,010 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0245
+2024-04-18 20:12:35,011 (preprocess-audio-files:94) INFO: utt n detected 29.562875/29.562875 secs (100.00 %) speech 
+2024-04-18 20:12:35,040 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0245 length=29.563 secs elapsed-time=137.17 ms. read-time=108.30 ms. write-time=28.87 ms. real-time-factor=215.52x-range=[-32744.522715-29819.567922]
+2024-04-18 20:12:35,122 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0246
+2024-04-18 20:12:35,122 (preprocess-audio-files:94) INFO: utt n detected 24.724688/24.724688 secs (100.00 %) speech 
+2024-04-18 20:12:35,156 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0246 length=24.725 secs elapsed-time=115.83 ms. read-time=82.08 ms. write-time=33.75 ms. real-time-factor=213.45x-range=[-29947.788840-32746.297830]
+2024-04-18 20:12:35,278 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0247
+2024-04-18 20:12:35,279 (preprocess-audio-files:94) INFO: utt n detected 77.734562/77.734562 secs (100.00 %) speech 
+2024-04-18 20:12:35,352 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0247 length=77.735 secs elapsed-time=195.67 ms. read-time=122.72 ms. write-time=72.95 ms. real-time-factor=397.28x-range=[-32766.000573-28601.126594]
+2024-04-18 20:12:35,682 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0248
+2024-04-18 20:12:35,682 (preprocess-audio-files:94) INFO: utt n detected 60.302750/60.302750 secs (100.00 %) speech 
+2024-04-18 20:12:35,746 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0248 length=60.303 secs elapsed-time=394.59 ms. read-time=330.06 ms. write-time=64.53 ms. real-time-factor=152.82x-range=[-32756.175342-25239.054730]
+2024-04-18 20:12:35,831 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0249
+2024-04-18 20:12:35,831 (preprocess-audio-files:94) INFO: utt n detected 40.684625/40.684625 secs (100.00 %) speech 
+2024-04-18 20:12:35,872 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0249 length=40.685 secs elapsed-time=124.93 ms. read-time=84.47 ms. write-time=40.46 ms. real-time-factor=325.66x-range=[-32556.973776-28651.158243]
+2024-04-18 20:12:35,906 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0250
+2024-04-18 20:12:35,906 (preprocess-audio-files:94) INFO: utt n detected 8.620437/8.620437 secs (100.00 %) speech 
+2024-04-18 20:12:35,917 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0250 length=8.620 secs elapsed-time=45.30 ms. read-time=34.38 ms. write-time=10.92 ms. real-time-factor=190.31x-range=[-30178.871376-32766.207634]
+2024-04-18 20:12:36,314 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0251
+2024-04-18 20:12:36,315 (preprocess-audio-files:94) INFO: utt n detected 31.973875/31.973875 secs (100.00 %) speech 
+2024-04-18 20:12:36,341 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0251 length=31.974 secs elapsed-time=424.12 ms. read-time=397.34 ms. write-time=26.79 ms. real-time-factor=75.39x-range=[-30775.958366-32771.102273]
+2024-04-18 20:12:36,432 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0252
+2024-04-18 20:12:36,432 (preprocess-audio-files:94) INFO: utt n detected 20.950187/20.950187 secs (100.00 %) speech 
+2024-04-18 20:12:36,459 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0252 length=20.950 secs elapsed-time=117.43 ms. read-time=90.56 ms. write-time=26.87 ms. real-time-factor=178.40x-range=[-32765.172641-30066.909818]
+2024-04-18 20:12:36,503 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0253
+2024-04-18 20:12:36,504 (preprocess-audio-files:94) INFO: utt n detected 0.975063/0.975063 secs (100.00 %) speech 
+2024-04-18 20:12:36,508 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0253 length=0.975 secs elapsed-time=48.94 ms. read-time=44.48 ms. write-time=4.46 ms. real-time-factor=19.92x-range=[-32583.823999-32417.192267]
+2024-04-18 20:12:36,993 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0254
+2024-04-18 20:12:36,994 (preprocess-audio-files:94) INFO: utt n detected 64.142125/64.142125 secs (100.00 %) speech 
+2024-04-18 20:12:37,056 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0254 length=64.142 secs elapsed-time=547.76 ms. read-time=485.13 ms. write-time=62.63 ms. real-time-factor=117.10x-range=[-31098.358098-32960.686916]
+2024-04-18 20:12:37,102 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0255
+2024-04-18 20:12:37,103 (preprocess-audio-files:94) INFO: utt n detected 5.537500/5.537500 secs (100.00 %) speech 
+2024-04-18 20:12:37,107 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0255 length=5.537 secs elapsed-time=50.76 ms. read-time=46.25 ms. write-time=4.51 ms. real-time-factor=109.10x-range=[-27514.072749-32817.086034]
+2024-04-18 20:12:37,226 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0256
+2024-04-18 20:12:37,226 (preprocess-audio-files:94) INFO: utt n detected 37.506937/37.506937 secs (100.00 %) speech 
+2024-04-18 20:12:37,258 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0256 length=37.507 secs elapsed-time=150.86 ms. read-time=118.58 ms. write-time=32.28 ms. real-time-factor=248.61x-range=[-28109.680330-32782.461333]
+2024-04-18 20:12:37,664 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0257
+2024-04-18 20:12:37,665 (preprocess-audio-files:94) INFO: utt n detected 5.000000/5.000000 secs (100.00 %) speech 
+2024-04-18 20:12:37,673 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0257 length=5.000 secs elapsed-time=414.54 ms. read-time=406.53 ms. write-time=8.01 ms. real-time-factor=12.06x-range=[-32767.007787-32765.992243]
+2024-04-18 20:12:37,762 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0258
+2024-04-18 20:12:37,762 (preprocess-audio-files:94) INFO: utt n detected 25.758063/25.758063 secs (100.00 %) speech 
+2024-04-18 20:12:37,789 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0258 length=25.758 secs elapsed-time=116.15 ms. read-time=88.79 ms. write-time=27.36 ms. real-time-factor=221.76x-range=[-32098.023947-32762.996592]
+2024-04-18 20:12:38,512 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0259
+2024-04-18 20:12:38,513 (preprocess-audio-files:94) INFO: utt n detected 14.706938/14.706938 secs (100.00 %) speech 
+2024-04-18 20:12:38,529 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0259 length=14.707 secs elapsed-time=739.67 ms. read-time=723.12 ms. write-time=16.55 ms. real-time-factor=19.88x-range=[-24619.115472-32766.133216]
+2024-04-18 20:12:38,962 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0260
+2024-04-18 20:12:38,962 (preprocess-audio-files:94) INFO: utt n detected 14.400000/14.400000 secs (100.00 %) speech 
+2024-04-18 20:12:38,980 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0260 length=14.400 secs elapsed-time=450.94 ms. read-time=432.88 ms. write-time=18.06 ms. real-time-factor=31.93x-range=[-32765.251759-30585.814861]
+2024-04-18 20:12:39,123 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0261
+2024-04-18 20:12:39,123 (preprocess-audio-files:94) INFO: utt n detected 88.000000/88.000000 secs (100.00 %) speech 
+2024-04-18 20:12:39,177 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0261 length=88.000 secs elapsed-time=196.60 ms. read-time=142.72 ms. write-time=53.88 ms. real-time-factor=447.60x-range=[-32766.724557-32445.285270]
+2024-04-18 20:12:39,236 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0262
+2024-04-18 20:12:39,236 (preprocess-audio-files:94) INFO: utt n detected 35.030187/35.030187 secs (100.00 %) speech 
+2024-04-18 20:12:39,271 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0262 length=35.030 secs elapsed-time=93.90 ms. read-time=58.77 ms. write-time=35.14 ms. real-time-factor=373.05x-range=[-32766.564956-24200.696488]
+2024-04-18 20:12:39,313 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0263
+2024-04-18 20:12:39,313 (preprocess-audio-files:94) INFO: utt n detected 0.904312/0.904312 secs (100.00 %) speech 
+2024-04-18 20:12:39,317 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0263 length=0.904 secs elapsed-time=45.90 ms. read-time=41.83 ms. write-time=4.07 ms. real-time-factor=19.70x-range=[-32764.452286-31217.595077]
+2024-04-18 20:12:39,394 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0264
+2024-04-18 20:12:39,394 (preprocess-audio-files:94) INFO: utt n detected 29.631375/29.631375 secs (100.00 %) speech 
+2024-04-18 20:12:39,426 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0264 length=29.631 secs elapsed-time=108.53 ms. read-time=76.84 ms. write-time=31.69 ms. real-time-factor=273.02x-range=[-29460.794506-32777.306079]
+2024-04-18 20:12:39,468 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0265
+2024-04-18 20:12:39,468 (preprocess-audio-files:94) INFO: utt n detected 1.332563/1.332563 secs (100.00 %) speech 
+2024-04-18 20:12:39,474 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0265 length=1.333 secs elapsed-time=47.97 ms. read-time=42.11 ms. write-time=5.87 ms. real-time-factor=27.78x-range=[-32101.005739-32766.014617]
+2024-04-18 20:12:39,576 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0266
+2024-04-18 20:12:39,576 (preprocess-audio-files:94) INFO: utt n detected 34.674625/34.674625 secs (100.00 %) speech 
+2024-04-18 20:12:39,629 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0266 length=34.675 secs elapsed-time=154.15 ms. read-time=101.72 ms. write-time=52.43 ms. real-time-factor=224.94x-range=[-31553.036403-32765.000706]
+2024-04-18 20:12:40,094 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0267
+2024-04-18 20:12:40,094 (preprocess-audio-files:94) INFO: utt n detected 36.138937/36.138937 secs (100.00 %) speech 
+2024-04-18 20:12:40,126 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0267 length=36.139 secs elapsed-time=497.60 ms. read-time=465.46 ms. write-time=32.15 ms. real-time-factor=72.63x-range=[-31333.869709-32785.173473]
+2024-04-18 20:12:40,208 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0268
+2024-04-18 20:12:40,209 (preprocess-audio-files:94) INFO: utt n detected 22.710875/22.710875 secs (100.00 %) speech 
+2024-04-18 20:12:40,231 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0268 length=22.711 secs elapsed-time=104.59 ms. read-time=82.20 ms. write-time=22.39 ms. real-time-factor=217.15x-range=[-32766.000006-32522.007502]
+2024-04-18 20:12:40,317 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0269
+2024-04-18 20:12:40,317 (preprocess-audio-files:94) INFO: utt n detected 49.125125/49.125125 secs (100.00 %) speech 
+2024-04-18 20:12:40,364 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0269 length=49.125 secs elapsed-time=132.25 ms. read-time=85.72 ms. write-time=46.53 ms. real-time-factor=371.46x-range=[-32576.730791-32766.275038]
+2024-04-18 20:12:40,722 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0270
+2024-04-18 20:12:40,722 (preprocess-audio-files:94) INFO: utt n detected 398.061062/398.061062 secs (100.00 %) speech 
+2024-04-18 20:12:40,940 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0270 length=398.061 secs elapsed-time=575.94 ms. read-time=358.62 ms. write-time=217.32 ms. real-time-factor=691.15x-range=[-32766.000391-26418.193395]
+2024-04-18 20:12:41,026 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0271
+2024-04-18 20:12:41,027 (preprocess-audio-files:94) INFO: utt n detected 29.698313/29.698313 secs (100.00 %) speech 
+2024-04-18 20:12:41,061 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0271 length=29.698 secs elapsed-time=121.22 ms. read-time=86.89 ms. write-time=34.33 ms. real-time-factor=244.99x-range=[-32764.753036-30544.314865]
+2024-04-18 20:12:41,113 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0272
+2024-04-18 20:12:41,113 (preprocess-audio-files:94) INFO: utt n detected 41.058125/41.058125 secs (100.00 %) speech 
+2024-04-18 20:12:41,152 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0272 length=41.058 secs elapsed-time=90.09 ms. read-time=51.73 ms. write-time=38.35 ms. real-time-factor=455.76x-range=[-32767.002773-32765.997257]
+2024-04-18 20:12:41,191 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0273
+2024-04-18 20:12:41,192 (preprocess-audio-files:94) INFO: utt n detected 10.643313/10.643313 secs (100.00 %) speech 
+2024-04-18 20:12:41,207 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0273 length=10.643 secs elapsed-time=54.93 ms. read-time=39.79 ms. write-time=15.14 ms. real-time-factor=193.77x-range=[-31596.604163-32692.433832]
+2024-04-18 20:12:41,232 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0274
+2024-04-18 20:12:41,233 (preprocess-audio-files:94) INFO: utt n detected 3.967750/3.967750 secs (100.00 %) speech 
+2024-04-18 20:12:41,239 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0274 length=3.968 secs elapsed-time=32.44 ms. read-time=25.68 ms. write-time=6.76 ms. real-time-factor=122.32x-range=[-21436.258878-32701.088931]
+2024-04-18 20:12:41,265 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0275
+2024-04-18 20:12:41,265 (preprocess-audio-files:94) INFO: utt n detected 12.096000/12.096000 secs (100.00 %) speech 
+2024-04-18 20:12:41,280 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0275 length=12.096 secs elapsed-time=40.23 ms. read-time=25.41 ms. write-time=14.81 ms. real-time-factor=300.70x-range=[-32336.919401-32780.093325]
+2024-04-18 20:12:41,306 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0276
+2024-04-18 20:12:41,307 (preprocess-audio-files:94) INFO: utt n detected 2.871500/2.871500 secs (100.00 %) speech 
+2024-04-18 20:12:41,313 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0276 length=2.872 secs elapsed-time=33.37 ms. read-time=26.75 ms. write-time=6.62 ms. real-time-factor=86.05x-range=[-31977.023391-32766.000749]
+2024-04-18 20:12:41,341 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0277
+2024-04-18 20:12:41,342 (preprocess-audio-files:94) INFO: utt n detected 5.705125/5.705125 secs (100.00 %) speech 
+2024-04-18 20:12:41,349 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0277 length=5.705 secs elapsed-time=35.80 ms. read-time=27.99 ms. write-time=7.81 ms. real-time-factor=159.38x-range=[-3643.988668-32126.919657]
+2024-04-18 20:12:41,384 (preprocess-audio-files:74) INFO: Processing audio noise-free-sound-0278
+2024-04-18 20:12:41,384 (preprocess-audio-files:94) INFO: utt n detected 37.598250/37.598250 secs (100.00 %) speech 
+2024-04-18 20:12:41,412 (preprocess-audio-files:126) INFO: Packed audio noise-free-sound-0278 length=37.598 secs elapsed-time=62.21 ms. read-time=34.60 ms. write-time=27.61 ms. real-time-factor=604.42x-range=[-23704.500856-32766.775724]
+2024-04-18 20:12:41,413 (preprocess-audio-files:131) INFO: writing time durations to /home/mkhelfi1/hyperion/egs/adc24/exp/musan_noise_proc_audio/utt2dur.musan_noise.3
+# Accounting: time=81 threads=1
+# Finished at Thu Apr 18 20:12:41 EDT 2024 with status 0
