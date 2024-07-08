@@ -106,7 +106,7 @@ if __name__ == "__main__":
     parser.add_argument("--trial-list", required=True)
     SVM.add_eval_args(parser, prefix="svm")
     parser.add_argument("--class-name", default="class_id")
-    parser.add_argument("--has-labels", default=False, action=ActionYesNo)
+    parser.add_argument("--has-labels", default=True, action=ActionYesNo)
     parser.add_argument("--model-dir", required=True)
     parser.add_argument("--score-file", required=True)
     parser.add_argument(

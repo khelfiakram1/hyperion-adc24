@@ -25,7 +25,7 @@ from hyperion.utils import SegmentSet
 from hyperion.io import RandomAccessDataReaderFactory as DRF
 from hyperion.helpers import VectorClassReader as VCR
 from hyperion.np.transforms import TransformList
-from hyperion.np.classifiers import LinearGBE as GBE
+from hyperion.np.classifiers import LinearSVMC as SVM
 from hyperion.np.metrics import (
     compute_accuracy,
     compute_confusion_matrix,
@@ -42,7 +42,7 @@ def compute_metrics(y_true, y_pred, labels):
     print_confusion_matrix(C, labels)
     logging.info("normalized confusion matrix:")
     C = compute_confusion_matrix(y_true, y_pred, normalize=True)
-    print_confusion_matrix(C * 100, labels)
+    print_confusion_matrix(C * 100, labels, fmt=".2f")
 
 
 def train_be(
@@ -50,7 +50,7 @@ def train_be(
     trial_list,
     class_name,
     has_labels,
-    gbe,
+    svm,
     model_dir,
     score_file,
     verbose,
@@ -73,25 +73,35 @@ def train_be(
         logging.info("applies transform")
         x = trans(x)
 
-    gbe_file = model_dir / "model_gbe.h5"
-    logging.info("loading GBE file %s", gbe_file)
-    gbe_model = GBE.load(gbe_file)
-    logging.info("GBE args=%s", str(gbe))
-    logging.info("evals GBE")
-    scores = gbe_model(x, **gbe)
-
+    svm_file = model_dir / "model_svm.h5"
+    logging.info("loading SVM file %s", svm_file)
+    svm_model = SVM.load(svm_file)
+    logging.info("SVM args=%s", str(svm))
+    logging.info("evals SVM")
+    scores = svm_model(x, **svm)
+    positive_class = svm_model.labels[1]  # Assuming the first label is the positive class
+    negative_class = svm_model.labels[0]  # Assuming the second label is the negative class
+    logging.info("Positive class: %s, Negative class: %s", positive_class, negative_class)
     if has_labels:
         class_ids = segs[class_name]
-        y_true = np.asarray([gbe_model.labels.index(l) for l in class_ids])
-        # labels, y_true = np.unique(class_ids, return_inverse=True)
-        y_pred = np.argmax(scores, axis=-1)
-        compute_metrics(y_true, y_pred, gbe_model.labels)
+        for l in class_ids:
+            logging.info("class %s --",l)
+        logging.info("class id  shape: %s", class_ids.shape)
+        y_true = np.asarray([svm_model.labels.index(l) for l in class_ids])
+        #labels, y_true = np.unique(class_ids, return_inverse=True)  
+        for s in scores :
+              logging.info("score %s --",s)
+        y_pred = np.where(scores[:, 0] >= 0,  svm_model.labels.index('ara-pal'), svm_model.labels.index('ara-jor'))
+
+
+        compute_metrics(y_true, y_pred, svm_model.labels)
+
 
     logging.info("Saving scores to %s", score_file)
     score_table = {"segmentid": segs["id"]}
-    for i, key in enumerate(gbe_model.labels):
-        score_table[key] = scores[:, i]
-
+    logging.info("Scores shape: %s", scores.shape)
+    score_table[svm_model.labels[0]] = scores[:, 0]
+    score_table[svm_model.labels[1]] = -scores[:, 0] 
     score_table = pd.DataFrame(score_table)
     score_table.to_csv(score_file, sep="\t", index=False)
 
@@ -99,14 +109,14 @@ def train_be(
 if __name__ == "__main__":
 
     parser = ArgumentParser(
-        description="Evals linear GBE",
+        description="Evals linear SVM",
     )
 
     parser.add_argument("--v-file", required=True)
     parser.add_argument("--trial-list", required=True)
-    GBE.add_eval_args(parser, prefix="gbe")
+    SVM.add_eval_args(parser, prefix="svm")
     parser.add_argument("--class-name", default="class_id")
-    parser.add_argument("--has-labels", default=False, action=ActionYesNo)
+    parser.add_argument("--has-labels", default=True, action=ActionYesNo)
     parser.add_argument("--model-dir", required=True)
     parser.add_argument("--score-file", required=True)
     parser.add_argument(

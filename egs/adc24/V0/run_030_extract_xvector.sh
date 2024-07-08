@@ -143,22 +143,22 @@ if [ $stage -le 2 ]; then
 	    --use-bin-vad false  \
 	    --random-utt-length true --min-utt-length 300 --max-utt-length 600 \
 	    --feat-config $feat_config \
-    	    $nnet data/${name} \
-    	    $xvector_dir/${name}_noaug \
-	    data/${name}_aug
+    	    $nnet data/${name}_proc_audio_no_sil \
+    	    $xvector_dir/${name} \
+	    data/${name}_proc_no_sil 
     done
 fi
 
 
 if [ $stage -le 3 ]; then
     # Extracts x-vectors for dev and eval
-    for name in adi17/dev adi17/test
+    for name in adi17/dev_proc_audio_no_sil  adi17/test_proc_audio_no_sil 
     do
 
 	steps_xvec/extract_xvectors_from_wav.sh \
 	    --cmd "$xvec_cmd --mem 6G" --nj 17 ${xvec_args} \
 	    --feat-config $feat_config \
 	    $nnet data/$name \
-	    $xvector_dir/$name
+	    $xvector_dir/${name}
     done
 fi

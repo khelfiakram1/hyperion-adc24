@@ -125,11 +125,11 @@ if __name__ == "__main__":
     PCA.add_class_args(parser, prefix="pca")
     SVM.add_class_args(parser, prefix="svm")
     parser.add_argument("--class-name", default="class_id")
-    parser.add_argument("--do-lnorm", default=False, action=ActionYesNo)
-    parser.add_argument("--whiten", default=False, action=ActionYesNo)
+    parser.add_argument("--do-lnorm", default=True, action=ActionYesNo)
+    parser.add_argument("--whiten", default=True, action=ActionYesNo)
     parser.add_argument("--output-dir", required=True)
     parser.add_argument(
-        "-v", "--verbose", dest="verbose", default=3, choices=[0, 1, 2, 3], type=int
+        "-v", "--verbose", dest="verbose", default=1, choices=[0, 1, 2, 3], type=int
     )
 
     args = parser.parse_args()
