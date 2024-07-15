@@ -45,7 +45,7 @@ fi
 
 export CUDA_LAUNCH_BLOCKING=1
 
-
+echo $nnet_s1_dir
 # Network Training
 if [ $stage -le 1 ]; then
   
