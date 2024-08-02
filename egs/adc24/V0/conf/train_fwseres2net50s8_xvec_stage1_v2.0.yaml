@@ -10,7 +10,7 @@ data:
       - class_id
     sampler:
       sampler_type: seg_chunk_sampler
-      min_batch_size: 16
+      min_batch_size: 128
       max_chunk_length: 3.0
       min_chunk_length: 3.0
     data_loader:
@@ -26,7 +26,7 @@ data:
       - class_id
     sampler:
       sampler_type: seg_chunk_sampler
-      min_batch_size: 16
+      min_batch_size: 128
       max_chunk_length: 3.0
       min_chunk_length: 3.0
     data_loader:
@@ -62,7 +62,7 @@ model:
 trainer:
   optim: 
     opt_type: adam
-    lr: 0.001
+    lr: 0.01
     amsgrad: true
     beta1: 0.9
     beta2: 0.99
@@ -77,8 +77,10 @@ trainer:
     update_lr_on_opt_step: true
   use_amp: true
   grad_clip: 250
-
+  # swa_start: 12
+  # swa_lr: 1e-5
+  # swa_anneal_epochs: 2
   log_interval: 1000
   epochs: 20
-  eff_batch_size: 64
+  eff_batch_size: 256
   

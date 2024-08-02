@@ -49,22 +49,41 @@ echo $nnet_s1_dir
 echo $nnet_type
 echo $nnet_s1_base_cfg
 # Network Training
-if [ $stage -le 1 ]; then
+# if [ $stage -le 1 ]; then
   
-  mkdir -p $nnet_s1_dir/log
-  $cuda_cmd \
-    --gpu $ngpu $nnet_s1_dir/log/train.log \
-    hyp_utils/conda_env.sh --conda-env $HYP_ENV --num-gpus $ngpu \
-    train_xvector_from_wav.py $nnet_type --cfg $nnet_s1_base_cfg $nnet_s1_args $extra_args \
-    --data.train.dataset.recordings-file $train_dir/wav.scp \
-    --data.train.dataset.time-durs-file $train_dir/utt2dur \
+#   mkdir -p $nnet_s1_dir/log
+#   $cuda_cmd \
+#     --gpu $ngpu $nnet_s1_dir/log/train.log \
+#     hyp_utils/conda_env.sh --conda-env $HYP_ENV --num-gpus $ngpu \
+#     train_xvector_from_wav.py $nnet_type --cfg $nnet_s1_base_cfg $nnet_s1_args $extra_args \
+#     --data.train.dataset.recordings-file $train_dir/wav.scp \
+#     --data.train.dataset.time-durs-file $train_dir/utt2dur \
+#     --data.train.dataset.segments-file $train_dir/utt2lang \
+#     --data.train.dataset.class-files $list_dir/Arabic_Dialects_class2int_with_id.csv \
+#     --data.val.dataset.recordings-file $dev_dir/wav.scp \
+#     --data.val.dataset.time-durs-file $dev_dir/utt2dur \
+#     --data.val.dataset.segments-file $dev_dir/utt2lang \
+#     --trainer.exp-path $nnet_s1_dir \
+#     --num-gpus $ngpu \
+  
+# fi
+
+if [ $stage -le 1 ]; then
+    if [ "$use_wandb" == "true" ];then
+	extra_args="$extra_args --trainer.wandb.name $nnet_s2_name.$(date -Iminutes)"
+    fi
+    mkdir -p $nnet_s2_dir/log
+    $cuda_cmd \
+	--gpu $ngpu $nnet_s2_dir/log/train.log \
+	hyp_utils/conda_env.sh --conda-env $HYP_ENV --num-gpus $ngpu \
+	finetune_xvector_from_wav.py $nnet_type --cfg $nnet_s2_base_cfg $nnet_s2_args $extra_args \
+	--data.train.dataset.recordings-file $train_dir/wav.scp \
     --data.train.dataset.segments-file $train_dir/utt2lang \
     --data.train.dataset.class-files $list_dir/Arabic_Dialects_class2int_with_id.csv \
     --data.val.dataset.recordings-file $dev_dir/wav.scp \
-    --data.val.dataset.time-durs-file $dev_dir/utt2dur \
     --data.val.dataset.segments-file $dev_dir/utt2lang \
-    --trainer.exp-path $nnet_s1_dir \
-    --num-gpus $ngpu \
-  
-fi
+    --in-model-file $nnet_s1 \
+	--trainer.exp-path $nnet_s2_dir \
+	--num-gpus $ngpu \
 
+fi

@@ -21,6 +21,11 @@ nnet_s1_dir=exp/xvector_nnets/$nnet_s1_name
 nnet_s1=$nnet_s1_dir/model_ep0040.pth
 
 
+nnet_s2_base_cfg=conf/train_ecapatdnn512x3_xvec_stage2_v3.0.yaml
+nnet_s2_name=${nnet_name}.s2
+nnet_s2_dir=exp/xvector_nnets/$nnet_s2_name
+nnet_s2=$nnet_s2_dir/model_ep0007.pth
+
 # back-end
 do_plda=true
 do_snorm=false

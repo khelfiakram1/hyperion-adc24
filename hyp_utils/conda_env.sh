@@ -65,7 +65,7 @@ if [ $num_gpus -gt 0 ];then
       if [ -z "$free_gpu" ];then
 	free_gpu=$(which hyp_utils/free-gpu)
       fi
-      
+
       if [ ! -z "$free_gpu" ];then
 	# if free-gpu found set env var, otherwise we assume that you can use any gpu
 	export CUDA_VISIBLE_DEVICES=$($free_gpu -n $num_gpus)
@@ -77,20 +77,20 @@ if [ $num_gpus -gt 0 ];then
       export PYTORCH_CUDA_ALLOC_CONF="max_split_size_mb:${max_split_size_mb}"
       echo "PYTORCH_CUDA_ALLOC_CONF="${PYTORCH_CUDA_ALLOC_CONF}
   fi
-  #export CUDA_LAUNCH_BLOCKING=1
+  export CUDA_LAUNCH_BLOCKING=1
   #export TORCH_DISTRIBUTED_DEBUG=DETAIL #variable to find unused parameters
   if [ $num_gpus -gt 1 ];then
-    
+
     [[ $(type -P "torchrun") ]] && command="torchrun" \
 	|| command="python -m torch.distributed.run"
     command="$command --nproc_per_node=$num_gpus --standalone --nnodes=1"
   fi
 fi
 
+
 py_exec=$(which $1)
 shift
 
 $command $py_exec "$@"
 
-conda deactivate 
-
+conda deactivate

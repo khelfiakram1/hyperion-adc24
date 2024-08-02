@@ -100,6 +100,7 @@ def tensors_subset(data, keys, device=None, return_dict=False):
         data = {k: data[k] for k in keys}
     else:
         data = tuple(data[k] for k in keys)
+        # logging.info("Data result : %s", data)
 
     if device is not None:
         data = tensors_to_device(data, device)

@@ -1,5 +1,68 @@
 # #!/bin/bash
 # # Copyright
+# #                2020   Johns Hopkins University (Author: Jesus Villalba)
+# # Apache 2.0.
+# #
+# . ./cmd.sh
+# . ./path.sh
+# set -e
+
+# stage=1
+# config_file=default_config.sh
+# use_gpu=false
+# xvec_chunk_length=12800
+# . parse_options.sh || exit 1;
+# . $config_file
+
+# if [ "$use_gpu" == "true" ];then
+#     xvec_args="--use-gpu true --chunk-length $xvec_chunk_length"
+#     xvec_cmd="$cuda_eval_cmd --mem 4G"
+# else
+#     xvec_cmd="$train_cmd --mem 12G"
+# fi
+
+# xvector_dir=exp/xvectors/$nnet_name
+
+# if [ $stage -le 1 ]; then
+#     # Extract xvectors for training LDA/PLDA
+#     for name in adi17/train
+#     do
+# 	if [ $plda_num_augs -eq 0 ]; then
+#     	    steps_xvec/extract_xvectors_from_wav.sh --cmd "$xvec_cmd" --nj 100 ${xvec_args} \
+# 		--random-utt-length true --min-utt-length 400 --max-utt-length 14000 \
+# 		--feat-config $feat_config \
+#     		$nnet data/${name} \
+#     		$xvector_dir/${name}
+# 	else
+# 	    steps_xvec/extract_xvectors_from_wav.sh --cmd "$xvec_cmd" --nj 300 ${xvec_args} \
+# 		--random-utt-length true --min-utt-length 400 --max-utt-length 14000 \
+# 		--feat-config $feat_config --aug-config $plda_aug_config --num-augs $plda_num_augs \
+#     		$nnet data/${name} \
+#     		$xvector_dir/${name}_augx${plda_num_augs} \
+# 		data/${name}_augx${plda_num_augs}
+# 	fi
+#     done
+# fi
+
+
+# if [ $stage -le 2 ]; then
+#     # Extracts x-vectors for evaluation
+#     for name in adi17/test 
+#     do
+# 	nj=100
+# 	steps_xvec/extract_xvectors_from_wav.sh --cmd "$xvec_cmd --mem 6G" --nj $nj ${xvec_args} \
+# 	    --feat-config $feat_config \
+# 	    $nnet data/$name \
+# 	    $xvector_dir/$name
+#     done
+# fi
+
+# exit
+# -----------------------------------
+# binary classifier
+
+# #!/bin/bash
+# # Copyright
 # # Apache 2.0.
 # #
 # . ./cmd.sh
@@ -131,28 +194,28 @@ elif [ $nnet_stage -eq 6 ];then
   nnet_name=$nnet_s6_name
 fi
 
-xvector_dir=exp/xvectors/$nnet_name
+xvector_dir=exp/xvectors/$nnet_name/binary
 
 
 if [ $stage -le 2 ]; then
     # Extract xvectors for training 
-    for name in adi17/train
+    for name in adi17/train_bis
     do
 	steps_xvec/extract_xvectors_from_wav.sh \
 	    --cmd "$xvec_cmd" --nj 20 ${xvec_args} \
 	    --use-bin-vad false  \
 	    --random-utt-length true --min-utt-length 300 --max-utt-length 600 \
 	    --feat-config $feat_config \
-    	    $nnet data/${name}_proc_audio_no_sil \
+    	    $nnet data/${name} \
     	    $xvector_dir/${name} \
-	    data/${name}_proc_no_sil 
+	    data/${name}
     done
 fi
 
 
 if [ $stage -le 3 ]; then
     # Extracts x-vectors for dev and eval
-    for name in adi17/dev_proc_audio_no_sil  adi17/test_proc_audio_no_sil 
+    for name in adi17/dev_bis adi17/test_bis
     do
 
 	steps_xvec/extract_xvectors_from_wav.sh \

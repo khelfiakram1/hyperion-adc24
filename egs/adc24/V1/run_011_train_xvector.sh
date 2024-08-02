@@ -55,7 +55,7 @@ if [ $stage -le 1 ]; then
   $cuda_cmd \
     --gpu $ngpu $nnet_s1_dir/log/train.log \
     hyp_utils/conda_env.sh --conda-env $HYP_ENV --num-gpus $ngpu \
-    train_xvector_from_wav.py $nnet_type --cfg $nnet_s1_base_cfg $nnet_s1_args $extra_args \
+    hyperion-train-wav2vec2xvector $nnet_type --cfg $nnet_s1_base_cfg $nnet_s1_args $extra_args \
     --data.train.dataset.recordings-file $train_dir/wav.scp \
     --data.train.dataset.time-durs-file $train_dir/utt2dur \
     --data.train.dataset.segments-file $train_dir/utt2lang \

@@ -139,7 +139,7 @@ if [ $stage -le 2 ]; then
     for name in adi17/train
     do
 	steps_xvec/extract_xvectors_from_wav.sh \
-	    --cmd "$xvec_cmd" --nj 20 ${xvec_args} \
+	    --cmd "$xvec_cmd" --nj 100 ${xvec_args} \
 	    --use-bin-vad false  \
 	    --random-utt-length true --min-utt-length 300 --max-utt-length 600 \
 	    --feat-config $feat_config \

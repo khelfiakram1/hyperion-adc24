@@ -5,6 +5,12 @@
 # Apache 2.0.
 #
 
+#SBATCH --account=a100acct
+#SBATCH --partition=gpu-a100
+#SBATCH --time=12:00:00
+#SBATCH --gpus-per-node=1
+
+conda activate hyperionnew
 . ./cmd.sh
 . ./path.sh
 set -e
@@ -49,12 +55,17 @@ echo $nnet_s1_dir
 echo $nnet_type
 echo $nnet_s1_base_cfg
 # Network Training
+
+
+#
+chmod 777 $nnet_s1_dir/log/train.log
+
+
 if [ $stage -le 1 ]; then
+  echo 'enter'
   
-  mkdir -p $nnet_s1_dir/log
-  $cuda_cmd \
-    --gpu $ngpu $nnet_s1_dir/log/train.log \
-    hyp_utils/conda_env.sh --conda-env $HYP_ENV --num-gpus $ngpu \
+  srun --output=$nnet_s1_dir/log/train.log \
+    hyp_utils/conda_env.sh --conda-env $HYP_ENV \
     train_xvector_from_wav.py $nnet_type --cfg $nnet_s1_base_cfg $nnet_s1_args $extra_args \
     --data.train.dataset.recordings-file $train_dir/wav.scp \
     --data.train.dataset.time-durs-file $train_dir/utt2dur \
@@ -64,7 +75,7 @@ if [ $stage -le 1 ]; then
     --data.val.dataset.time-durs-file $dev_dir/utt2dur \
     --data.val.dataset.segments-file $dev_dir/utt2lang \
     --trainer.exp-path $nnet_s1_dir \
-    --num-gpus $ngpu \
+     \
   
 fi
 

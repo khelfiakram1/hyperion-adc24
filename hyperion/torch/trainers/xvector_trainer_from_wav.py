@@ -117,7 +117,11 @@ class XVectorTrainerFromWav(XVectorTrainer):
             with torch.no_grad():
                 feats, feats_lengths = self.feat_extractor(audio)
 
+            assert feats is not None, "Input features are None"
+            # assert feats_lengths is not None, "Feature lengths are None"
             with amp.autocast(enabled=self.use_amp, dtype=self.amp_dtype):
+                #assert not torch.isnan(feats).any(), "Input features contain NaN values"
+                #assert not torch.isnan(feats_lengths).any(), "Feature lengths contain NaN values"
                 output = self.model(feats, feats_lengths, y=target)
                 loss = self.loss(output.logits, target) / self.grad_acc_steps
 
@@ -167,10 +171,14 @@ class XVectorTrainerFromWav(XVectorTrainer):
                 self.model.eval()
 
             for batch, data in enumerate(data_loader):
+                logging.info("Data is %s", data)
                 audio, target = tensors_subset(data, batch_keys, self.device)
                 batch_size = audio.size(0)
 
                 feats, feats_lengths = self.feat_extractor(audio)
+                logging.info("Feat_lenghts is %s", feats_lengths)
+                logging.info("Feat is %s", feats)
+
                 with amp.autocast(enabled=self.use_amp, dtype=self.amp_dtype):
                     output = self.model(feats, feats_lengths)
                     loss = self.loss(output.logits, target)

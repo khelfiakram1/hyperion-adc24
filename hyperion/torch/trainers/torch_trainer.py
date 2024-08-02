@@ -403,7 +403,7 @@ class TorchTrainer(object):
             self.loggers.on_batch_begin(batch)
             if batch % self.grad_acc_steps == 0:
                 self.optimizer.zero_grad()
-
+            # logging.info("data is : %s", data)
             input_data, target = tensors_subset(data, batch_keys, self.device)
             batch_size = input_data.size(0)
 
