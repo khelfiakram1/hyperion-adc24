@@ -74,10 +74,10 @@ if [ $stage -le 10 ]; then
   $train_cmd exp/be/fbank80_stmn_ecapatdnn512x3.adc24.so.s1/log/train_be.log \
 	     hyp_utils/conda_env.sh \
 	     steps_be/train_be_v1.py \
-	     --v-file scp:exp/xvectors/fbank80_stmn_ecapatdnn512x3.adc24.so.s1/adi17/train/xvector.scp \
+	     --v-file scp:exp/xvectors/fbank80_stmn_fwseres2net50s8_v2.0.s1/adi17/train/xvector.scp \
 	     --train-list data/adi17/train/utt2lang \
 		 --pca.pca-var-r $pca_var_r \
-	     --output-dir exp/be/fbank80_stmn_ecapatdnn512x3.adc24.so.s1/ \
+	     --output-dir exp/be/fbank80_stmn_fwseres2net50s8_v2.0.s1/ \
 	   
 
 fi
@@ -86,13 +86,55 @@ fi
 if [ $stage -le 11 ];then
 	for name in dev_proc_audio_no_sil test_proc_audio_no_sil
 	do
+	echo "Dev Evaluation"
   	$train_cmd \
 			${score_dir}_p12_binary/train_${name}.log \
 			hyp_utils/conda_env.sh \
-			steps_be/eval_be_v2.py \
-			--v-file scp:exp/xvectors/fbank80_stmn_ecapatdnn512x3.adc24.so.s1/adi17/${name}/xvector.scp \
+			steps_be/eval_be_cos.py \
+			--v-file scp:exp/xvectors/fbank80_stmn_fwseres2net50s8_v2.0.s1/adi17/${name}/xvector.scp \
 			--trial-list data/adi17/${name}/utt2lang \
-			--model-dir exp/be/fbank80_stmn_ecapatdnn512x3.adc24.so.s1/ \
+			--model-dir exp/be/fbank80_stmn_fwseres2net50s8_v2.0.s1/ \
 			--score-file ${score_dir}_adi17__${name}_cores_so_ep30.tsv
 	done
 fi
+
+# if [ $stage -le 12 ];then
+	
+# 	echo "Test Evaluation <5s"
+  	# $train_cmd \
+	# 		${score_dir}_resnet/test_5s.log \
+	# 		hyp_utils/conda_env.sh \
+	# 		steps_be/eval_be_v2.py \
+	# 		--v-file scp:exp/xvectors/fbank80_stmn_fwseres2net50s8_v2.0.s1/adi17/test_proc_audio_no_sil/xvector.scp \
+	# 		--trial-list data/adi17/test_proc_audio_no_sil/utt2lang \
+	# 		--dur-file data/adi17/test_proc_audio_no_sil/utt2dur \
+	# 		--model-dir exp/be/fbank80_stmn_fwseres2net50s8_v2.0.s1/ \
+	# 		--min-dur 0.0 \
+	# 		--max-dur 5.0 \
+	# 		--score-file ${score_dir}_adi17__test_proc_audio_no_sil_cores_so_ep10_5s.tsv
+
+	# $train_cmd \
+	# 		${score_dir}_resnet/test_5s20s.log \
+	# 		hyp_utils/conda_env.sh \
+	# 		steps_be/eval_be_v2.py \
+	# 		--v-file scp:exp/xvectors/fbank80_stmn_fwseres2net50s8_v2.0.s1/adi17/test_proc_audio_no_sil/xvector.scp \
+	# 		--trial-list data/adi17/test_proc_audio_no_sil/utt2lang \
+	# 		--dur-file data/adi17/test_proc_audio_no_sil/utt2dur \
+	# 		--model-dir exp/be/fbank80_stmn_fwseres2net50s8_v2.0.s1/ \
+	# 		--min-dur 5.0 \
+	# 		--max-dur 20.0 \
+	# 		--score-file ${score_dir}_adi17__test_proc_audio_no_sil_cores_so_ep10_5s20s.tsv
+	
+	# $train_cmd \
+	# 		${score_dir}_resnet/test_20s.log \
+	# 		hyp_utils/conda_env.sh \
+	# 		steps_be/eval_be_v2.py \
+	# 		--v-file scp:exp/xvectors/fbank80_stmn_fwseres2net50s8_v2.0.s1/adi17/test_proc_audio_no_sil/xvector.scp \
+	# 		--trial-list data/adi17/test_proc_audio_no_sil/utt2lang \
+	# 		--dur-file data/adi17/test_proc_audio_no_sil/utt2dur \
+	# 		--model-dir exp/be/fbank80_stmn_fwseres2net50s8_v2.0.s1/ \
+	# 		--min-dur 20.0 \
+	# 		--max-dur 30.0 \
+	# 		--score-file ${score_dir}_adi17__test_proc_audio_no_sil_cores_so_ep10_20s.tsv
+	
+# fi

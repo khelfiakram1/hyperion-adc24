@@ -1,74 +1,117 @@
-import numpy as np
-import h5py
-from sklearn.preprocessing import StandardScaler
-from scipy.spatial.distance import cosine
-import json
+#!/usr/bin/env python
+"""
+ Copyright 2018 Johns Hopkins University  (Author: Jesus Villalba)
+ Apache 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+"""
+
+import sys
+import os
 import logging
+from jsonargparse import (
+    ArgumentParser,
+    ActionConfigFile,
+    ActionParser,
+    namespace_to_dict,
+    ActionYesNo,
+)
+import time
+from pathlib import Path
 
-def setup_logging():
-    logging.basicConfig(level=logging.INFO,
-                        format='%(asctime)s - %(levelname)s - %(message)s')
+import numpy as np
+import pandas as pd
 
-def load_xvectors(xvector_scp):
-    logging.info(f"Loading x-vectors from {xvector_scp}")
-    xvectors = {}
-    with open(xvector_scp, 'r') as f:
-        for line in f:
-            utt_id, path = line.strip().split()
-            xvectors[utt_id] = np.load(path)
-    logging.info(f"Loaded {len(xvectors)} x-vectors")
-    return xvectors
+from hyperion.hyp_defs import config_logger
+from hyperion.utils import SegmentSet
+from hyperion.io import RandomAccessDataReaderFactory as DRF
+from hyperion.helpers import VectorClassReader as VCR
+from hyperion.np.transforms import TransformList
+from hyperion.np.classifiers import LinearSVMC as SVM
+from hyperion.np.metrics import (
+    compute_accuracy,
+    compute_confusion_matrix,
+    print_confusion_matrix,
+)
 
-def load_preproc(preproc_file):
-    logging.info(f"Loading preprocessing data from {preproc_file}")
-    with h5py.File(preproc_file, 'r') as f:
-        pca_mean = f['pca_mean'][:]
-        pca_components = f['pca_components'][:]
-    logging.info("Loaded PCA mean and components")
-    return pca_mean, pca_components
 
-def apply_preproc(xvectors, pca_mean, pca_components):
-    logging.info("Applying PCA preprocessing to x-vectors")
-    xvectors_centered = {utt_id: xvec - pca_mean for utt_id, xvec in xvectors.items()}
-    xvectors_pca = {utt_id: np.dot(pca_components, xvec) for utt_id, xvec in xvectors_centered.items()}
-    logging.info("Applied PCA preprocessing")
-    return xvectors_pca
+def compute_metrics(y_true, y_pred, labels):
 
-def calculate_cosine_similarity(xvectors_train, xvectors_test):
-    logging.info("Calculating cosine similarity")
-    scores = {}
-    for test_id, test_xvec in xvectors_test.items():
-        for train_id, train_xvec in xvectors_train.items():
-            score = 1 - cosine(test_xvec, train_xvec)
-            scores[(test_id, train_id)] = score
-    logging.info("Calculated cosine similarity for all pairs")
-    return scores
+    acc = compute_accuracy(y_true, y_pred)
+    logging.info("test acc: %.2f %%", acc * 100)
+    logging.info("non-normalized confusion matrix:")
+    C = compute_confusion_matrix(y_true, y_pred, normalize=False)
+    print_confusion_matrix(C, labels)
+    logging.info("normalized confusion matrix:")
+    C = compute_confusion_matrix(y_true, y_pred, normalize=True)
+    print_confusion_matrix(C * 100, labels, fmt=".2f")
 
-def save_scores(scores, output_file):
-    logging.info(f"Saving scores to {output_file}")
-    with open(output_file, 'w') as f:
-        json.dump(scores, f)
-    logging.info("Scores saved")
 
-def main(preproc_file, xvector_train_scp, xvector_test_scp, output_file):
-    setup_logging()
-    logging.info("Starting evaluation")
-    xvectors_train = load_xvectors(xvector_train_scp)
-    xvectors_test = load_xvectors(xvector_test_scp)
-    pca_mean, pca_components = load_preproc(preproc_file)
-    xvectors_train_pca = apply_preproc(xvectors_train, pca_mean, pca_components)
-    xvectors_test_pca = apply_preproc(xvectors_test, pca_mean, pca_components)
-    scores = calculate_cosine_similarity(xvectors_train_pca, xvectors_test_pca)
-    save_scores(scores, output_file)
-    logging.info("Evaluation completed")
+def train_be(
+    v_file,
+    trial_list,
+    class_name,
+    has_labels,
+    svm,
+    model_dir,
+    score_file,
+    verbose,
+):
+    config_logger(verbose)
+    model_dir = Path(model_dir)
+    output_dir = Path(score_file).parent
+    output_dir.mkdir(parents=True, exist_ok=True)
+    logging.info("loading data")
+    segs = SegmentSet.load(trial_list)
+    reader = DRF.create(v_file)
+    x = reader.read(segs["id"], squeeze=True)
+    del reader
+    logging.info("loaded %d samples", x.shape[0])
+
+    trans_file = model_dir / "transforms.h5"
+    if trans_file.is_file():
+        logging.info("loading transform file %s", trans_file)
+        trans = TransformList.load(trans_file)
+        logging.info("applies transform")
+        x = trans(x)
+
+    svm_file = model_dir / "model_svm.h5"
+    logging.info("loading SVM file %s", svm_file)
+    svm_model = SVM.load(svm_file)
+    logging.info("SVM args=%s", str(svm))
+    logging.info("evals SVM")
+    scores = svm_model(x, **svm)
+
+    if has_labels:
+        class_ids = segs[class_name]
+        y_true = np.asarray([svm_model.labels.index(l) for l in class_ids])
+        # labels, y_true = np.unique(class_ids, return_inverse=True)
+        y_pred = np.argmax(scores, axis=-1)
+        compute_metrics(y_true, y_pred, svm_model.labels)
+
+    logging.info("Saving scores to %s", score_file)
+    score_table = {"segmentid": segs["id"]}
+    for i, key in enumerate(svm_model.labels):
+        score_table[key] = scores[:, i]
+
+    score_table = pd.DataFrame(score_table)
+    score_table.to_csv(score_file, sep="\t", index=False)
+
 
 if __name__ == "__main__":
-    import argparse
-    parser = argparse.ArgumentParser(description="Evaluate model using cosine similarity.")
-    parser.add_argument('--preproc-file', type=str, required=True, help="Path to the preprocessing file (preproc.h5).")
-    parser.add_argument('xvector_train_scp', type=str, help="Path to the xvector.scp file for training data.")
-    parser.add_argument('xvector_test_scp', type=str, help="Path to the xvector.scp file for test data.")
-    parser.add_argument('output_file', type=str, help="Path to the output file for saving scores.")
-    args = parser.parse_args()
 
-    main(args.preproc_file, args.xvector_train_scp, args.xvector_test_scp, args.output_file)
+    parser = ArgumentParser(
+        description="Evals linear SVM",
+    )
+
+    parser.add_argument("--v-file", required=True)
+    parser.add_argument("--trial-list", required=True)
+    SVM.add_eval_args(parser, prefix="svm")
+    parser.add_argument("--class-name", default="class_id")
+    parser.add_argument("--has-labels", default=True, action=ActionYesNo)
+    parser.add_argument("--model-dir", required=True)
+    parser.add_argument("--score-file", required=True)
+    parser.add_argument(
+        "-v", "--verbose", dest="verbose", default=1, choices=[0, 1, 2, 3], type=int
+    )
+
+    args = parser.parse_args()
+    train_be(**namespace_to_dict(args))

@@ -48,6 +48,9 @@ def compute_metrics(y_true, y_pred, labels):
 def train_be(
     v_file,
     trial_list,
+    dur_file,
+    min_dur,
+    max_dur,
     class_name,
     has_labels,
     svm,
@@ -59,10 +62,28 @@ def train_be(
     model_dir = Path(model_dir)
     output_dir = Path(score_file).parent
     output_dir.mkdir(parents=True, exist_ok=True)
-    logging.info("loading data")
+    filtered_segments = []
+    with open(dur_file, 'r') as f:
+        for line in f:
+            segment_id, duration = line.strip().split()
+            duration = float(duration)
+            if max_dur == 30 :
+                if duration > float(min_dur) : 
+                    filtered_segments.append(segment_id)
+            else : 
+                if duration < float(max_dur) and duration > float(min_dur):
+                    
+                    filtered_segments.append(segment_id)
+
+# Load the segments from the trial list
     segs = SegmentSet.load(trial_list)
+   
+
+# Filter the segments in the trial list based on the filtered segment IDs
+    final_segments_df = segs.df[segs.df['id'].isin(filtered_segments)]
+    final_segments = final_segments_df.to_dict('records')
     reader = DRF.create(v_file)
-    x = reader.read(segs["id"], squeeze=True)
+    x = reader.read([seg['id'] for seg in final_segments], squeeze=True)
     del reader
     logging.info("loaded %d samples", x.shape[0])
 
@@ -81,7 +102,7 @@ def train_be(
     scores = svm_model(x, **svm)
 
     if has_labels:
-        class_ids = segs[class_name]
+        class_ids = segs[class_name][segs['id'].isin(filtered_segments)]
         y_true = np.asarray([svm_model.labels.index(l) for l in class_ids])
         # labels, y_true = np.unique(class_ids, return_inverse=True)
         y_pred = np.argmax(scores, axis=-1)
@@ -112,6 +133,9 @@ if __name__ == "__main__":
     parser.add_argument(
         "-v", "--verbose", dest="verbose", default=1, choices=[0, 1, 2, 3], type=int
     )
+    parser.add_argument("--dur-file", required=True)
+    parser.add_argument("--min-dur",type=float,required=True)
+    parser.add_argument("--max-dur",type=float,required=True)
 
     args = parser.parse_args()
     train_be(**namespace_to_dict(args))
