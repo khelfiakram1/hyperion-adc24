@@ -1,4 +1,6 @@
-. global_conf/config_fbank64_stmn_fwseres2net50s8_v2.0.sh
+# . global_conf/config_wav2vec2xlsr300m_ecapatdnn512x3_v1.sh
+# . global_conf/config_fbank64_stmn_fwseres2net50s8_v2.0.sh
+. global_conf/config_wav2vec2xlsr300m_loraqv_ecapatdnn512x3_v1.sh
 # # ECAPA-TDNN small
 # echo 'enter'
 # # acoustic features

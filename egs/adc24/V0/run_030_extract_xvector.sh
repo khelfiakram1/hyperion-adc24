@@ -111,6 +111,9 @@ if [ $nnet_stages -lt $nnet_stage ];then
     nnet_stage=$nnet_stages
 fi
 
+nnet_stage=2
+
+
 if [ $nnet_stage -eq 1 ];then
   nnet=$nnet_s1
   nnet_name=$nnet_s1_name
@@ -133,6 +136,8 @@ fi
 
 xvector_dir=exp/xvectors/$nnet_name
 
+echo 'extracting from' 
+echo $nnet
 
 if [ $stage -le 2 ]; then
     # Extract xvectors for training 

@@ -1,0 +1,2 @@
+#beam_width: 10
+decoding_method: greedy

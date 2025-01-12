@@ -1,0 +1,3 @@
+Submitted batch job 219910
+/var/spool/slurmd/job219910/slurm_script: line 3: module: command not found
+Python 3.8.19

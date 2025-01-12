@@ -16,7 +16,7 @@ from ...torch_model import TorchModel
 from ...utils import remove_silence
 from ..transducer import RNNTransducer, RNNTransducerOutput
 
-
+  
 class HFWav2RNNTransducer(TorchModel):
     """Abstract Base class for RNN-T transducer models that use a Hugging Face Model as feature extractor.
 

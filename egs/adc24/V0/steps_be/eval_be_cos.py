@@ -65,7 +65,7 @@ def train_be(
     x = reader.read(segs["id"], squeeze=True)
     del reader
     logging.info("loaded %d samples", x.shape[0])
-
+    logging.info(f"{x.shape}")
     trans_file = model_dir / "transforms.h5"
     if trans_file.is_file():
         logging.info("loading transform file %s", trans_file)
@@ -73,7 +73,7 @@ def train_be(
         logging.info("applies transform")
         x = trans(x)
 
-    svm_file = model_dir / "model_svm.h5"
+    svm_file = model_dir / "groups_model_svm.h5"
     logging.info("loading SVM file %s", svm_file)
     svm_model = SVM.load(svm_file)
     logging.info("SVM args=%s", str(svm))
