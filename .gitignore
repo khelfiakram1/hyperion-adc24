@@ -7,6 +7,7 @@
 *.wav
 *.flac
 tests/data_out/*
+
 #examples/data/output/wav/*
 #examples/data/output/features/*
 #examples/data/output/vad/*
@@ -40,7 +41,6 @@ tools/kaldi
 tools/nccl_*
 tools/path.sh
 tools/sph2pipe_*
-
 rirs_noises.zip
 RIRS_NOISES
 egs/*/*/exp
