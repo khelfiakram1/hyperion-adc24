@@ -40,7 +40,7 @@ mkdir -p $dir/log
 mkdir -p $data_out
 output_dir=$(utils/make_absolute.sh $dir)
 
-if [[ $(hostname -f) == *.clsp.jhu.edu ]] && [ ! -d $output_dir/storage ]; then
+if [[ $(hostname -f) == clsp ]] && [ ! -d $output_dir/storage ]; then
     dir_name=$USER/hyp-data/$storage_name/rirs/storage
     if [ "$nodes" == "b0" ];then
 	utils/create_split_dir.pl \
@@ -61,7 +61,7 @@ utils/create_data_link.pl $output_dir/rirs_${name}.${file_format}
 
 
 args=""
-$cmd $dir/log/pack_rirs_${name}.log \
+$cuda_cmd $dir/log/pack_rirs_${name}.log \
     hyp_utils/conda_env.sh \
     pack_wav_rirs.py ${args} --input $data_in/wav.scp \
      --output ${file_format},scp:$output_dir/rirs_${name}.${file_format},$data_out/rirs.scp || exit 1;

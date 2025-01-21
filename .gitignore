@@ -7,7 +7,7 @@
 *.wav
 *.flac
 tests/data_out/*
-
+events.out.tfevents.*
 #examples/data/output/wav/*
 #examples/data/output/features/*
 #examples/data/output/vad/*
@@ -60,3 +60,8 @@ qq
 30.sh
 30.*.sh
 40.sh
+egs/adc24/V2/notebooks/finetune_whisper.ipynb
+egs/adc24/V2/notebooks/finetune_whisper.ipynb
+egs/adc24/V2/local/visualise.ipynb
+egs/adc24/V2/notebooks/download.ipynb
+*.ipynb

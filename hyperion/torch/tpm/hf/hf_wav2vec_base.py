@@ -118,22 +118,24 @@ class HFWav2VecBase(TorchModel):
                 )
                 # rank 0 downloads the model from HF web
                 try:
+                    logging.info("Trying to download feature extractor config")
                     # some models donot have config for processor because do not have
                     # tokenizer, first we try to donwload feature_extractor config
                     feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained(
                         pretrained_model_path,
                         cache_dir=cache_dir,
-                        force_download=force_download,
-                        resume_download=resume_download,
+                        force_download=False,
+                        #resume_download=resume_download,
                         revision=revision,
                     )
                 except:
                     # if fails, we try to download full processor config
+                    logging.info("Failed to download feature extractor trying to download full processor")
                     processor = Wav2Vec2Processor.from_pretrained(
                         pretrained_model_path,
                         cache_dir=cache_dir,
-                        force_download=force_download,
-                        resume_download=resume_download,
+                        force_download=False,
+                        #resume_download=resume_download,
                         revision=revision,
                     )
                     feature_extractor = processor.feature_extractor
@@ -147,7 +149,7 @@ class HFWav2VecBase(TorchModel):
                         pretrained_model_path,
                         cache_dir=cache_dir,
                         force_download=False,
-                        resume_download=False,
+                        #resume_download=False,
                         revision=revision,
                     )
                 except:

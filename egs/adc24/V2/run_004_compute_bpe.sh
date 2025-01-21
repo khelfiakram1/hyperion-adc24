@@ -7,8 +7,8 @@ set -e
 
 vocab_sizes=(
   200
-  300
-  500
+  5000
+  8000
 )
 
 
@@ -42,7 +42,7 @@ for vocab_size in ${vocab_sizes[@]}; do
     local/train_bpe_model.py \
     --lang-dir $lang_dir \
     --vocab-size $vocab_size \
-    --transcript data/qasr/lm/qasr_transcript_words.txt
+    --transcript data/qasr/lm/qasr_transcript_words_clean.txt
 
     echo $K2_ROOT
     echo $HYP_ENV

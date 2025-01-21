@@ -10,7 +10,10 @@ import sys
 import time
 from pathlib import Path
 
-import k2
+try:
+    import k2
+except ModuleNotFoundError:
+    import dummy_k2 as k2
 import numpy as np
 import torch
 import torch.nn as nn
@@ -37,7 +40,8 @@ model_dict = {
     "hf_wav2vec2rnn_transducer": HFWav2Vec2RNNTransducer,
     "hf_wav2vec2rnn_rnn_transducer": HFWav2Vec2RNNRNNTransducer,
     "hf_wav2vec2conformer_v1_rnn_transducer": HFWav2Vec2ConformerV1RNNTransducer,
-    # "hf_hubert2rnn_transducer": HFWav2Vec2RNNTransducer,
+    # "hf_hubert2rnn_transducer": HFWav2Vec2
+    # ransducer,
     # "hf_hubert2rnn_rnn_transducer": Hubert2RNNRNNTransducer,
     # "hf_wavlm2rnn_transducer": HFHubert2RNNTransducer,
     # "hf_wavlm2rnn_rnn_transducer": HFWavLM2RNNRNNTransducer,
@@ -108,8 +112,8 @@ def init_model(blank_id, vocab_size, rank, model_class, **kwargs):
     if rank == 0:
         logging.info("model network args={}".format(model_args))
     # TODO: check model_args
-    model_args["transducer"]["decoder"]["blank_id"] = blank_id
-    model_args["transducer"]["decoder"]["vocab_size"] = vocab_size
+    model_args["transducer"]["rnnt_decoder"]["blank_id"] = blank_id
+    model_args["transducer"]["rnnt_decoder"]["vocab_size"] = vocab_size
     model = model_class(**model_args)
     if rank == 0:
         logging.info("model={}".format(model))

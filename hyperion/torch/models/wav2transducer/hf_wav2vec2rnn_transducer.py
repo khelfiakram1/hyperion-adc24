@@ -53,6 +53,7 @@ class HFWav2Vec2RNNTransducer(HFWav2RNNTransducer):
         base_args["hf_feats"] = child_args
         child_args = RNNTransducer.filter_args(**kwargs["transducer"])
         base_args["transducer"] = child_args
+        logging.info("HFWav2Vec2RNNTransducer arguments: %s", base_args["transducer"])
         return base_args
 
     @staticmethod

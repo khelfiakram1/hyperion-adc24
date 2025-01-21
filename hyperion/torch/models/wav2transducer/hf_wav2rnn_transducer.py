@@ -16,7 +16,7 @@ from ...torch_model import TorchModel
 from ...utils import remove_silence
 from ..transducer import RNNTransducer, RNNTransducerOutput
 
-  
+
 class HFWav2RNNTransducer(TorchModel):
     """Abstract Base class for RNN-T transducer models that use a Hugging Face Model as feature extractor.
 
@@ -40,7 +40,7 @@ class HFWav2RNNTransducer(TorchModel):
         super().__init__()
         self.hf_feats = hf_feats
         if isinstance(transducer, dict):
-            transducer["decoder"]["in_feats"] = hf_feats.hidden_size
+            transducer["rnnt_decoder"]["in_feats"] = hf_feats.hidden_size
             if "class_name" in transducer:
                 del transducer["class_name"]
 

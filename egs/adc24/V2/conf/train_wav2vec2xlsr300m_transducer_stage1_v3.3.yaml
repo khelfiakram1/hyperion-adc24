@@ -10,7 +10,7 @@ data:
       #sampler_type: 'seg_sampler'
       sampler_type: 'bucketing_seg_sampler'
       max_batch_length: 70.
-      min_batch_size: 64
+      min_batch_size: 512
       drop_last: false
     data_loader:
       num_workers: 4
@@ -25,7 +25,7 @@ data:
       #sampler_type: 'seg_sampler'
       sampler_type: 'bucketing_seg_sampler'
       max_batch_length: 70.
-      min_batch_size: 64
+      min_batch_size: 512
       drop_last: true
     data_loader:
       num_workers: 4

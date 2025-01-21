@@ -1,4 +1,4 @@
-. ./global_conf/hf_wav2vec2rnn_transducer_xlsr_500_bpe_qasr.sh
+. ./global_conf/hf_wav2vec2rnn_transducer_xlsr_5000_bpe.sh
 # # WavLM base trained on 60k LibriLight + 10k GigaSpeech + 24k Voxpopuli + ECAPA-TDNN 512x3
 
 # # hugging face model

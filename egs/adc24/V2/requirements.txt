@@ -34,7 +34,7 @@ graphviz==0.20.3
 grpcio==1.64.0
 h5py==3.11.0
 huggingface-hub==0.23.2
-hyperion-ml==0.4.0a0
+# hyperion-ml==0.4.0a0
 idna==3.10
 imageio==2.35.1
 imagesize==1.4.1

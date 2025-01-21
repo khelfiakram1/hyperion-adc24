@@ -32,7 +32,7 @@ def clean_text(text):
 
     return text
 
-def clean_text_file(source_file, target_file, verbose):
+def clean_text_file(source_file, target_file,text_only, verbose):
     config_logger(verbose)
     logging.info(f" Cleaning text file")
     with open(source_file, "r", encoding="utf-8") as f, \
@@ -40,18 +40,25 @@ def clean_text_file(source_file, target_file, verbose):
         for line in f: 
             
             line = line.strip()
-            parts = line.split(maxsplit=1)
-            if len(parts) == 2:
-                utt_id, text = parts
-                logging.info(f"Cleaning text for utterance {utt_id}")
-                cleaned_text = clean_text(text)
-                o.write(f"{utt_id} {cleaned_text}\n")
+
+            if text_only:
+                cleaned_text = clean_text(line)
+                o.write(f"{cleaned_text}\n")
+            else : 
+                parts = line.split(maxsplit=1)
+                if len(parts) == 2:
+                    utt_id, text = parts
+                    logging.info(f"Cleaning text for utterance {utt_id}")
+                    cleaned_text = clean_text(text)
+                    o.write(f"{utt_id} {cleaned_text}\n")
 
 if __name__ == "__main__":
 
     parser = ArgumentParser()
     parser.add_argument("--source-file", type=str, required=True, help="Source text file")
     parser.add_argument("--target-file", type=str, required=True, help="Target text file")
+    parser.add_argument("--text-only", action="store_true", 
+                        help="If set, the script will treat each line as text without utt_id.")    
     parser.add_argument("-v",
                         "--verbose",
                         dest="verbose",

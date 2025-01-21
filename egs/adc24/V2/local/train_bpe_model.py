@@ -66,7 +66,7 @@ def main():
 
     model_prefix = f"{lang_dir}/{model_type}_{vocab_size}"
     train_text = args.transcript
-    character_coverage = 0.99
+    character_coverage = 1.0
     input_sentence_size = 100000000
 
     user_defined_symbols = ["<blk>", "<sos/eos>"]

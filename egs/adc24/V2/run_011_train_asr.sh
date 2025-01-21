@@ -7,24 +7,12 @@
 . ./path.sh
 set -e
 
-# export CUDA_VISIBLE_DEVICES=0
-
-#ml purge
-#module load namd/2.14-cuda-smp
-#module load cuda/11.6.0
-#ml
-#nvidia-smi
-#export CUDA_VISIBLE_DEVICES=0,1,2,3
-#export CONV_RSH=ssh
-#export LD_LIBRARY_PATH=/scratch4/jvillal7/ylu125/miniconda3/envs/gsp_hyp/lib/:$LD_LIBRARY_PATH
-
-# export CUDA_VISIBLE_DEVICES=0,1
 stage=1
 ngpu=2
 config_file=default_config.sh
 interactive=false
 num_workers=""
-use_tb=true
+use_tb=false
 use_wandb=false
 
 . parse_options.sh || exit 1;
@@ -55,7 +43,6 @@ fi
 # Network Training
 if [ $stage -le 1 ]; then
 
-  mkdir -p $nnet_s1_dir/rir/log
   $cuda_cmd \
     --gpu $ngpu $nnet_s1_dir/log/train.log \
     hyp_utils/conda_env.sh --conda-env $HYP_ENV --num-gpus $ngpu --max-split-size-mb 512 \
@@ -64,16 +51,16 @@ if [ $stage -le 1 ]; then
     --data.train.dataset.recordings-file $train_dir/wav.scp \
     --data.train.dataset.segments-file $train_dir/utt2spk \
     --data.train.dataset.bpe-model $bpe_model \
-    --data.train.dataset.text-file $train_dir/text \
+    --data.train.dataset.text-file $train_dir/text_clean \
     --data.val.dataset.recordings-file $val_dir/wav.scp \
     --data.val.dataset.segments-file $val_dir/fixed_utt2spk \
-    --data.val.dataset.text-file $val_dir/text \
+    --data.val.dataset.text-file $val_dir/text_clean \
     --trainer.exp-path $nnet_s1_dir $args \
     --data.train.dataset.time-durs-file $train_dir/utt2dur \
     --data.val.dataset.time-durs-file $val_dir/utt2dur \
     --master-port 1236 \
-    --num-gpus $ngpu
-
+    --num-gpus $ngpu 
+  
 fi
 
 
